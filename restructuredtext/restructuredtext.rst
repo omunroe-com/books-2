@@ -12,7 +12,16 @@
 :Abstract:
 
    `reStructuredText`_ is primarily used in Python community for writing
-   technical documentation (both Python docstrings and standalone documents).
+   technical documentation, both Python docstrings and standalone documents.
+
+   Unlike `Markdown`, reStructuredText covers many advanced markups, like
+   metadata, semantics, tables, table of contents and so on. It has also a
+   standardized way for writing custom extensions.
+
+   reStructuredText is commonly used with `Sphinx`_, which is a documentation
+   generator originally developed for the official `Python documentation`, but
+   now it is independent from a project using a different programming language
+   or none at all.
 
 .. contents:: Table of Contents
 
