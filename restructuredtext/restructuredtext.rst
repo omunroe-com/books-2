@@ -26,7 +26,7 @@
    :Filename extension: ``.rst``
    :Reference documentation: http://docutils.sourceforge.net/rst.html#reference-documentation
 
-.. contents:: Table of Contents
+.. contents::
 
 .. _Creative Commons Attribution 4.0 International Public License: https://creativecommons.org/licenses/by/4.0/
 .. _Davie Badger: https://github.com/daviebadger
