@@ -20,7 +20,7 @@
 
    reStructuredText is commonly used with `Sphinx`_, which is a documentation
    generator originally developed for the official `Python documentation`_, but
-   now it is independent from a project using a different programming language
+   now it is independent from projects using a different programming language
    or none at all.
 
 .. contents:: Table of Contents
