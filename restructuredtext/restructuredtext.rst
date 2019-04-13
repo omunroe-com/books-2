@@ -30,7 +30,7 @@
 .. _Markdown: https://daringfireball.net/projects/markdown/
 .. _Python documentation: https://docs.python.org
 .. _reStructuredText: http://docutils.sourceforge.net/rst.html
-.. _Sphinx: http://www.sphinx-doc.org/en/master/
+.. _Sphinx: http://www.sphinx-doc.org
 
 References
 ==========
