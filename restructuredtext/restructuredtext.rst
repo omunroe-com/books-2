@@ -39,7 +39,9 @@ References
 ==========
 
 * `reStructuredText`__
+* `Sphinx - reStructuredText Primer`__
 * `Wikipedia - reStructuredText`__
 
 __ http://docutils.sourceforge.net/rst.html
+__ http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 __ https://en.wikipedia.org/wiki/ReStructuredText
