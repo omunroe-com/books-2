@@ -35,6 +35,15 @@
 .. _reStructuredText: http://docutils.sourceforge.net/rst.html
 .. _Sphinx: http://www.sphinx-doc.org
 
+Markups
+=======
+
+Directives
+==========
+
+Interpreted Text Roles
+======================
+
 References
 ==========
 
