@@ -28,6 +28,9 @@
 
 .. contents::
 
+.. sectnum::
+   :suffix: .
+
 .. _Creative Commons Attribution 4.0 International Public License: https://creativecommons.org/licenses/by/4.0/
 .. _Davie Badger: https://github.com/daviebadger
 .. _Markdown: https://daringfireball.net/projects/markdown/
