@@ -46,8 +46,8 @@ Sections
 --------
 
 Sections headers are a single line of text with an underline or an underline
-and an overline of non-alphanumeric characters (adornment), which are as long
-as the text:
+and an overline of non-alphanumeric characters (adornment), which are at least
+as long as the text:
 
 .. code:: rst
 
@@ -110,7 +110,8 @@ levels in HTML), which may be followed:
      """""""""""""""
 
 If there is a need to use a document title with a subtitle in a standalone
-document, then the following adornment style is recommended by reST:
+document out of documentation, then the following adornment style is
+recommended by reST:
 
 .. code:: rst
 
