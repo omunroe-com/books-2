@@ -64,7 +64,7 @@ with heading levels through a document.
 The Python documentation has the following convention (with analogous heading
 levels in HTML), which may be followed:
 
-* ``#`` - with overline and centered title text using 2 spaces at the left
+* ``#`` with overline and centered title text using 2 spaces at the left
   edge, for parts (H1 in a master document in Sphinx) [#]_
 
   .. code:: rst
@@ -73,7 +73,7 @@ levels in HTML), which may be followed:
        Title
      #########
 
-* ``*`` - with overline, for chapters (H1 in a common document)
+* ``*`` with overline, for chapters (H1 in a common document)
 
   .. code:: rst
 
@@ -81,28 +81,28 @@ levels in HTML), which may be followed:
      Title
      *****
 
-* ``=`` - for sections (H2)
+* ``=`` for sections (H2)
 
   .. code:: rst
 
      Section Title
      =============
 
-* ``-`` - for subsections (H3)
+* ``-`` for subsections (H3)
 
   .. code:: rst
 
      Subsection Title
      ----------------
 
-* ``^`` - for subsubsections (H4)
+* ``^`` for subsubsections (H4)
 
   .. code:: rst
 
      Subsubsection Title
      ^^^^^^^^^^^^^^^^^^^
 
-* ``"`` - for paragraphs (H5)
+* ``"`` for paragraphs (H5)
 
   .. code:: rst
 
