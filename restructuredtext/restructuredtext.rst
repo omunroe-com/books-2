@@ -149,8 +149,8 @@ line:
 
    This is another paragraph.
 
-To preserve line breaks in paragraphs, a vertical bar (``|``) with at least one
-space must be used at the left edge of each line with a line break:
+To preserve line breaks in paragraphs, a vertical bar (``|``) with a space must
+be used at the left edge of each line with a line break:
 
 .. code:: rst
 
