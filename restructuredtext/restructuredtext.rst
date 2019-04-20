@@ -169,6 +169,12 @@ containing a line break:
      which continues over
      another lines
 
+.. tip::
+
+   The Python documentation use maximally 80 characters per line except a few
+   special cases (tables, links, code samples), when it is allowed to exceed
+   this limit.
+
 Directives
 ==========
 
