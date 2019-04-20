@@ -135,6 +135,40 @@ recommended by reST:
 
 .. _The Python documentation: https://devguide.python.org/documenting/#sections
 
+Paragraphs
+----------
+
+Paragraphs are chunks of text aligned at the left edge and separated by a blank
+line:
+
+.. code:: rst
+
+   This is a paragraph over
+   three lines, but the line breaks will not be preserved after
+   transforming reST documents to other text formats as HTML or PDF.
+
+   This is another paragraph.
+
+To preserve line breaks in paragraphs, a vertical bar (``|``) with at least one
+space must be used at the left edge of each line with a line break:
+
+.. code:: rst
+
+   | First line
+   | Second line
+   | Third line
+   |
+   | Fifth line
+
+It is also possible to join lines if they are left-aligned with text at a line
+containing a line break:
+
+.. code:: rst
+
+   | A really long line
+     which continues over
+     another lines
+
 Directives
 ==========
 
