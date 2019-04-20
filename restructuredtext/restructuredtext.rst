@@ -160,6 +160,8 @@ be used at the left edge of each line with a line break:
    |
    | Fifth line
 
+   ...
+
 It is also possible to join lines if they are left-aligned with text at a line
 containing a line break:
 
@@ -168,6 +170,8 @@ containing a line break:
    | A really long line
      which continues over
      another lines
+
+   ...
 
 .. tip::
 
