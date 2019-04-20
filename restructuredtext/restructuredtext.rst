@@ -109,8 +109,8 @@ levels in HTML), which may be followed:
      Paragraph Title
      """""""""""""""
 
-If there is a need to use a document title with a subtitle in a standalone
-document out of documentation, then the following adornment style is
+For standalone documents out of documentation, if there is a need to use a
+document title with a subtitle, then the following adornment style is
 recommended by reST:
 
 .. code:: rst
