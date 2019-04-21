@@ -179,6 +179,45 @@ containing a line break:
    special cases (tables, links, code samples), when it is allowed to exceed
    this limit.
 
+Text styles
+-----------
+
+Text in paragraphs and other body elements [#]_ is normal by default (no text
+style), unless some parts of text need to be emphasized. One asterisk (``*``)
+around word(s) indicates emphasis (italics), whereas two asterisks indicate
+strong emphasis (boldface):
+
+.. code:: rst
+
+   *This part of text will be rendered in italics*,
+   **while this one in bold**.
+
+reST is pretty smart when to not use italics or boldface, if there are spaces
+or asterisks inside a word:
+
+.. code:: rst
+
+   1 * 1 is 1. 2*2 is 4. 3 ** 3 is 27.
+
+However, if there is a need to emphasis characters inside a word, then around
+asterisks must be spaces escaped:
+
+.. code:: rst
+
+   thisis\ **one**\ word (thisisoneword with "one" in bold)
+
+Escaping can be also used with asterisks:
+
+.. code:: rst
+
+   \*This text will not be rendered in italics\*, nevertheless the asterisks
+   will be preserved.
+
+.. note::
+
+   Because both emphasis and strong emphasis use asterisks, it is not possible
+   to use italics and boldface at the same time.
+
 Directives
 ==========
 
@@ -204,3 +243,4 @@ __ https://en.wikipedia.org/wiki/ReStructuredText
 
 .. [#] Special ``index.rst`` files which serves as a welcoming page with a
    table of contents.
+.. [#] Body elements are markup inside sections.
