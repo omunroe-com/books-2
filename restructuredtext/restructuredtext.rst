@@ -206,12 +206,13 @@ asterisks must be spaces escaped:
 
    thisis\ **one**\ word (thisisoneword with "one" in bold)
 
-Escaping can be also used with asterisks:
+Escaping can be also used with asterisks or any other special markup found
+later in this book:
 
 .. code:: rst
 
-   \*This text will not be rendered in italics\*, nevertheless the asterisks
-   will be preserved.
+   Explicitly: \*italics\* (twice)
+   Implicitly: \**bold** (once)
 
 .. note::
 
