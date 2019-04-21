@@ -14,9 +14,9 @@
    `reStructuredText`_ (reST) is primarily used in Python community for writing
    technical documentation, both Python docstrings and standalone documents.
 
-   Unlike `Markdown`_, reST covers officially many advanced markups, for
-   example metadata, automatic table of contents, tables and semantic text. It
-   has also a standardized way for writing custom extensions.
+   Unlike `Markdown`_, reST covers officially many advanced markup, for example
+   metadata, automatic table of contents, tables and semantic text. It has also
+   a standardized way for writing custom extensions.
 
    reST is commonly used with `Sphinx`_, which is a documentation generator
    originally developed for the official `Python documentation`_, but now it is
@@ -39,7 +39,7 @@
 .. _reStructuredText: http://docutils.sourceforge.net/rst.html
 .. _Sphinx: http://www.sphinx-doc.org
 
-Markups
+Markup
 =======
 
 Sections
