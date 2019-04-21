@@ -149,7 +149,7 @@ line:
 
    This is another paragraph.
 
-To preserve line breaks in paragraphs, a vertical bar (``|``) with a space must
+To preserve line breaks in paragraphs, a vertical bar ("|") with a space must
 be used at the left edge of each line with a line break:
 
 .. code:: rst
@@ -183,8 +183,8 @@ Text styles
 -----------
 
 Text in paragraphs and other body elements [#]_ is normal by default (no text
-style), unless some parts of text need to be emphasized. One asterisk (``*``)
-around word(s) indicates emphasis (italics), whereas two asterisks indicate
+style), unless some parts of text need to be emphasized. One asterisk ("*")
+around a word(s) indicates emphasis (italics), whereas two asterisks indicate
 strong emphasis (boldface):
 
 .. code:: rst
@@ -213,6 +213,13 @@ later in this book:
 
    Explicitly: \*italics\* (twice)
    Implicitly: \**bold** (once)
+
+Besides emphasis, text may be monospaced, which is used for inline code
+samples. Each character inside double backquotes ("``") is preserved:
+
+.. code:: rst
+
+   To emphesasize text, you need to use ``*`` around a word, e.g. ``*italics*``.
 
 .. note::
 
