@@ -265,8 +265,45 @@ lines and left-aligned with text at the previous line:
        * first subsubitem
 
      * second subitem
+     * third subitem
 
    * second item
+
+Numbered List
+^^^^^^^^^^^^^
+
+Numbered (enumerated) lists consists of a number and a formatting type, usually
+a period (like in the Python documentation) followed by one space and an item:
+
+.. code:: rst
+
+   1. first item
+   2. second item over
+      two lines
+   3. third item
+
+Items may be automatically numbered for greater convenience:
+
+.. code:: rst
+
+   #. item
+   #. item
+   #. item
+
+Both bulleted and enumerated lists may be combined:
+
+.. code:: rst
+
+   * first bulleted item
+
+     1. first numbered item
+
+        * first inner bulleted item
+
+     2. second numbered item
+
+   * second bulleted item
+   * third bulleted item
 
 Definition List
 ^^^^^^^^^^^^^^^
