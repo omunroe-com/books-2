@@ -229,6 +229,45 @@ samples. Each character inside double backquotes ("``") is preserved:
 Lists
 -----
 
+Bulleted List
+^^^^^^^^^^^^^
+
+Bulleted lists consists of a bullet point character, usually an asterisk (like
+in the Python documentation) followed by one space and an item:
+
+.. code:: rst
+
+   * first item
+   * second item
+   * third item
+
+Items may continue on the next lines like pagraphs with line breaks or have
+other body elements inside text:
+
+.. code:: rst
+
+   * first item over
+     two lines
+   * second item with two paragraphs
+
+     This is the **second** pagagraph.
+
+Bulleted lists may be also nested, if the inner lists are surrounded by blank
+lines and left-aligned with text at the previous line:
+
+.. code:: rst
+
+   * first item
+     over two lines
+
+     * first subitem
+
+       * first subsubitem
+
+     * second subitem
+
+   * second item
+
 Definition List
 ^^^^^^^^^^^^^^^
 
@@ -244,7 +283,7 @@ terms:
    HTML
       Hypertext Markup Language for creating web pages.
 
-Definitions may contain more than one paragraph and other body elements:
+Definitions may contain more than one paragraph or other body elements:
 
 .. code:: rst
 
