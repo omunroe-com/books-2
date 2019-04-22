@@ -283,4 +283,4 @@ __ https://en.wikipedia.org/wiki/ReStructuredText
 
 .. [#] Special ``index.rst`` files which serves as a welcoming page with a
    table of contents.
-.. [#] Body elements are markup inside sections.
+.. [#] Body elements are markup inside sections (paragraphs, lists, tables etc.).
