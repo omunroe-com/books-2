@@ -226,6 +226,38 @@ samples. Each character inside double backquotes ("``") is preserved:
    Because both emphasis and strong emphasis use asterisks, it is not possible
    to use italics and boldface at the same time.
 
+Lists
+-----
+
+Definition List
+^^^^^^^^^^^^^^^
+
+Definitions lists consists of a term and a definition for that term starting
+at the next line with indentation and separated by a blank line from other
+terms:
+
+.. code:: rst
+
+   reST
+      A shortcut for reStructuredText markup language.
+
+   HTML
+      Hypertext Markup Language for creating web pages.
+
+Definitions may contain more than one paragraph and other body elements:
+
+.. code:: rst
+
+   Term
+      This term cannot be *briefly* explained.
+
+      It requires **two** paragraphs for its definition.
+
+.. tip::
+
+   The Python documentation uses 3 spaces for indentation in reST documents
+   (mainly due to `Directives`_).
+
 Directives
 ==========
 
