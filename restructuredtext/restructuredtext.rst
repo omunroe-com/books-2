@@ -294,7 +294,7 @@ Both bulleted and enumerated lists may be combined:
 
 .. code:: rst
 
-   * first bulleted item
+   * first outer bulleted item
 
      1. first numbered item
 
@@ -302,8 +302,8 @@ Both bulleted and enumerated lists may be combined:
 
      2. second numbered item
 
-   * second bulleted item
-   * third bulleted item
+   * second outer bulleted item
+   * third outer bulleted item
 
 Definition List
 ^^^^^^^^^^^^^^^
