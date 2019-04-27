@@ -130,7 +130,7 @@ recommended by reST:
 .. tip::
 
    There may exist a reST plugin to your editor, which can speed up creating
-   section headers by highlighting section titles and applying a keyboard
+   section headers by highlighting a section title and applying a keyboard
    shortcut for a specific heading level.
 
 .. _The Python documentation: https://devguide.python.org/documenting/#sections
@@ -337,7 +337,7 @@ Definitions may contain more than one paragraph or other body elements:
 Field List
 ^^^^^^^^^^
 
-Field lists are actually two-column tables where each row has a header (field)
+Field lists are actually two-column tables, where each row has a header (field)
 in the first column and content (field body) in the second column:
 
 .. code:: rst
@@ -355,6 +355,33 @@ Field bodies may contain more than one paragraph or other body elements:
       * lists
 
       etc.
+
+Option List
+^^^^^^^^^^^
+
+Option lists are two-column tables, where each row has an option(s) in the
+first column and description for that option in the second column separated by
+at least two spaces:
+
+.. code:: rst
+
+   -v               Verbose
+   -h, --help       Display help message
+                    and exit
+   -n number        Provide a number
+   -h, --host=host  Host to connect
+
+.. note::
+
+   If reST is used inside Sphinx, then it is better to use Sphinx's directives
+   for documenting CLI programs and options (no need to control spaces, better
+   rendering in other formats, easy to manage).
+
+.. tip::
+
+   There may exist a reST plugin to your editor which support automatic
+   alignment in option lists by highlighting an option list and applying a
+   keyboard shortcut.
 
 Directives
 ==========
