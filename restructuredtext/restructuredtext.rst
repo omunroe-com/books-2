@@ -150,7 +150,8 @@ line:
    This is another paragraph.
 
 To preserve line breaks in paragraphs, a vertical bar ("|") with a space must
-be used at the left edge of each line with a line break:
+be used at the left edge of each line with a line break in order to create
+line blocks:
 
 .. code:: rst
 
