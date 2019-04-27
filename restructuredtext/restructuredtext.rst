@@ -332,7 +332,29 @@ Definitions may contain more than one paragraph or other body elements:
 .. tip::
 
    The Python documentation uses 3 spaces for indentation in reST documents
-   (mainly due to `Directives`_).
+   (mainly due to Directives, described later in his book).
+
+Field List
+^^^^^^^^^^
+
+Field lists are actually two-column tables where each row has a header (field)
+in the first column and content (field body) in the second column:
+
+.. code:: rst
+
+   :Shortcut: reST
+   :Filename extension: ``.rst``
+   :Reference documentation: www
+
+Field bodies may contain more than one paragraph or other body elements:
+
+.. code:: rst
+
+   :Body elements:
+      * paragraphs
+      * lists
+
+      etc.
 
 Directives
 ==========
