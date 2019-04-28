@@ -384,9 +384,42 @@ at least two spaces:
    alignment in option lists by highlighting an option list and applying a
    keyboard shortcut.
 
-Explicit Markup Blocks
-----------------------
+Horizontal Lines
+----------------
 
+Horizontal lines are at least four same successive punctuation characters
+surrounded by blank lines between paragraphs:
+
+.. code:: rst
+
+   This is a paragraph.
+
+   ----
+
+   This is another paragraph.
+
+The Python documentation has no convention for the horizontal lines. Propably
+they do not use them at all. However, the documentation for reST uses hyphens in
+all examples.
+
+.. note::
+
+   The purpose of horizontal lines is to signal a change in a subject between
+   paragraphs in literature. In reST documents, the horizontal lines are rather
+   used at the end of files with footnotes.
+
+   If your editor allows you to quickly insert 80 hyphens at once, then you may
+   use them instead of four hyphens:
+
+   .. code:: rst
+
+      ...
+
+      --------------------------------------------------------------------------------
+
+      .. [#] Footnote A
+      .. [#] Footnote B
+      .. [#] Footnote C
 
 Directives
 ==========
