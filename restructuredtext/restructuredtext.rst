@@ -384,6 +384,10 @@ at least two spaces:
    alignment in option lists by highlighting an option list and applying a
    keyboard shortcut.
 
+Explicit Markup Blocks
+----------------------
+
+
 Directives
 ==========
 
@@ -405,8 +409,11 @@ __ https://www.sphinx-doc.org/en/master/usage/quickstart.html
 __ http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 __ https://en.wikipedia.org/wiki/ReStructuredText
 
+--------------------------------------------------------------------------------
+
 .. rubric:: Footnotes
 
-.. [#] Special ``index.rst`` files which serves as a welcoming page with a
-   table of contents.
-.. [#] Body elements are markup inside sections (paragraphs, lists, tables etc.).
+.. [#] Special ``index.rst`` files which serves as a welcoming page with a table
+   of contents.
+.. [#] Body elements are markup inside sections (paragraphs, lists, tables
+   etc.).
