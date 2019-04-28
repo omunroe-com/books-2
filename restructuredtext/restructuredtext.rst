@@ -360,9 +360,9 @@ Field bodies may contain more than one paragraph or other body elements:
 Option Lists
 ^^^^^^^^^^^^
 
-Option lists are two-column tables, where each row has an option(s) in the
-first column and description for that option in the second column separated by
-at least two spaces:
+Option lists are two-column tables, where each row has an option(s) in the first
+column and a description for that option in the second column which is separated
+by at least two spaces:
 
 .. code:: rst
 
@@ -372,11 +372,24 @@ at least two spaces:
    -n number        Provide a number
    -h, --host=host  Host to connect
 
+It is possible to use body elements in descriptions, but they must be
+left-aligned with the previous lines. The longer options, the more indentations
+is needed for the body elements on the next lines:
+
+.. code:: rst
+
+   -n number  Provide a number.
+
+              Allowed formats:
+
+              * integer
+              * float
+
 .. note::
 
-   If reST is used inside Sphinx, then it is better to use Sphinx's directives
-   for documenting CLI programs and options (no need to control spaces, better
-   rendering in other formats, easy to manage).
+   If reST documents are written inside Sphinx, then it is better to use its
+   directives for documenting command-line programs and options, because they
+   more scalable, easier to maintain and better rendered in other text formats.
 
 .. tip::
 
