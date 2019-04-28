@@ -427,6 +427,14 @@ Directives
 Interpreted Text Roles
 ======================
 
+Glossary
+========
+
+reST uses officially the following terms for markup syntax:
+
+Transitions
+   `Horizontal Lines`_
+
 References
 ==========
 
