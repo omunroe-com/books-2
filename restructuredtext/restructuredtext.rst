@@ -230,8 +230,8 @@ samples. Each character inside double backquotes ("``") is preserved:
 Lists
 -----
 
-Bulleted List
-^^^^^^^^^^^^^
+Bulleted Lists
+^^^^^^^^^^^^^^
 
 Bulleted lists consists of a bullet point character, usually an asterisk (like
 in the Python documentation) followed by one space and an item:
@@ -270,8 +270,8 @@ lines and left-aligned with text at the previous line:
 
    * second item
 
-Numbered List
-^^^^^^^^^^^^^
+Numbered Lists
+^^^^^^^^^^^^^^
 
 Numbered (enumerated) lists consists of a number and a formatting type, usually
 a period (like in the Python documentation) followed by one space and an item:
@@ -306,8 +306,8 @@ Both bulleted and enumerated lists may be combined:
    * second outer bulleted item
    * third outer bulleted item
 
-Definition List
-^^^^^^^^^^^^^^^
+Definition Lists
+^^^^^^^^^^^^^^^^
 
 Definitions lists consists of a term and a definition for that term starting
 at the next line with indentation and separated by a blank line from other
@@ -335,8 +335,8 @@ Definitions may contain more than one paragraph or other body elements:
    The Python documentation uses 3 spaces for indentation in reST documents
    (mainly due to Directives, described later in his book).
 
-Field List
-^^^^^^^^^^
+Field Lists
+^^^^^^^^^^^
 
 Field lists are actually two-column tables, where each row has a header (field)
 in the first column and content (field body) in the second column:
@@ -357,8 +357,8 @@ Field bodies may contain more than one paragraph or other body elements:
 
       etc.
 
-Option List
-^^^^^^^^^^^
+Option Lists
+^^^^^^^^^^^^
 
 Option lists are two-column tables, where each row has an option(s) in the
 first column and description for that option in the second column separated by
