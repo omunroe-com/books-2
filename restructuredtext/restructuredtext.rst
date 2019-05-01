@@ -412,7 +412,7 @@ surrounded by blank lines between paragraphs:
    This is another paragraph.
 
 The Python documentation has no convention for the horizontal lines. Propably
-they do not use them at all. However, the documentation for reST uses hyphens in
+they are not used at all. However, the documentation for reST uses hyphens in
 all examples.
 
 .. note::
@@ -443,7 +443,7 @@ Interpreted Text Roles
 Glossary
 ========
 
-reST uses officially the following terms for markup syntax:
+reST uses officially the following terminology for markup syntax:
 
 Transitions
    `Horizontal Lines`_
