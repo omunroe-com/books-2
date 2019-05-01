@@ -397,6 +397,21 @@ is needed for the body elements on the next lines:
    alignment in option lists by highlighting an option list and applying a
    keyboard shortcut.
 
+Hyperlinks
+----------
+
+Tables
+------
+
+Simple Tables
+^^^^^^^^^^^^^
+
+Grid Tables
+^^^^^^^^^^^
+
+Code Samples
+------------
+
 Block Quotes
 ------------
 
@@ -540,6 +555,9 @@ all examples.
       .. [#] Footnote B
       .. [#] Footnote C
 
+Substitution
+------------
+
 Directives
 ==========
 
@@ -556,6 +574,10 @@ Citations
    periods instead of numbered indexes, e.g. ``[label123]_``.
 
    Citations are rarely used, footnotes are much more prefered.
+Doctest Blocks
+   `Code Samples`_ with interactive Python interpreter.
+Literal Blocks
+   `Code Samples`_
 Transitions
    `Horizontal Lines`_
 
