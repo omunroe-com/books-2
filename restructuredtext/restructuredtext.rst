@@ -412,6 +412,56 @@ Grid Tables
 Code Samples
 ------------
 
+Code samples are indented pieces of code, which begin with a special unindented
+paragraph containing only two colons followed by a blank line:
+
+.. code:: rst
+
+   Example from Python:
+
+   ::
+
+      def hello(name="World"):
+          print(f"Hello {name}")
+
+
+      hello()
+      hello("Davie")
+
+The two colons may appear at the end of text followed by a space:
+
+.. code:: rst
+
+   Example from Python: ::
+
+      hello()
+
+Both previous examples may be even further shortened, when reST will left
+one colon instead of two colons at the end of the paragraph which will look
+exactly like in the first example:
+
+.. code:: rst
+
+   Example from Python::
+
+      hello()
+
+Short Python code samples without blank lines may be also written like
+interactive interpreter (no need to indent code):
+
+.. code:: rst
+
+   Example from Python:
+
+   >>> print("Hello World")
+   Hello World
+
+.. note::
+
+   Code samples using ``::`` markup are not highlighted at all, except the
+   Python interactive examples. There are special directives for this case
+   (either in reST or Sphinx).
+
 Block Quotes
 ------------
 
