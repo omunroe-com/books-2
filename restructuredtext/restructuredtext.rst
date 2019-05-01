@@ -397,6 +397,62 @@ is needed for the body elements on the next lines:
    alignment in option lists by highlighting an option list and applying a
    keyboard shortcut.
 
+Block Quotes
+------------
+
+
+Comments
+--------
+
+
+Footnotes
+---------
+
+Footnotes consits of numbers (indexes) inside square brackets followed by an
+underscore in text and descriptions (footnote) for that indexes usually at the
+end of documents:
+
+.. code:: rst
+
+   ``#`` with overline is used as an adornment style for document titles in
+   master documents in Sphinx [1]_.
+
+   .. [1] Master documents are special ``index.rst`` files with a TOC.
+
+For short documents may be explicit numbers enough, but if a document is long
+or regularly changed, it is better to use auto-numbered footnotes to save
+time with overriding:
+
+.. code:: rst
+
+   ``#`` with overline is used as an adornment style for document titles in
+   master documents in Sphinx [#].
+
+   .. [#] Master documents are special ``index.rst`` files with a TOC.
+
+Long footnotes may continue on another lines with other body elements if they
+are left-aligned with the left square bracket:
+
+.. code:: rst
+
+   .. [#] Master documents are special ``index.rst``
+      files with a TOC.
+
+      They are stored in each directory (group of documents).
+
+.. note::
+
+   Each footnote is automatically hyperlinked to itself. It is possible in
+   rendered reST documents to click on an index in text, see a footnote at the
+   end of a document, click on the index next to the footnote and be back in
+   text where I had been previously.
+
+.. tip::
+
+   To insert another footnote between existing auto-numebered footnotes requires
+   only to find a previous or next occurence of ``[#]_`` to know where to
+   properly place the new footnote.
+
 Horizontal Lines
 ----------------
 
