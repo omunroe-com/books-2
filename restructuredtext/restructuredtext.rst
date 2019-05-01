@@ -501,6 +501,11 @@ Glossary
 
 reST uses officially the following terminology for markup syntax:
 
+Citations
+   `Footnotes`_ with alphanumeric characters plus hyphens, underscores and
+   periods instead of numbered indexes, e.g. ``[label123]_``.
+
+   Citations are rarely used, footnotes are much more prefered.
 Transitions
    `Horizontal Lines`_
 
