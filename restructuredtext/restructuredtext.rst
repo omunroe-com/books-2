@@ -400,6 +400,47 @@ is needed for the body elements on the next lines:
 Block Quotes
 ------------
 
+Block quotes are just indented paragraphs, which may be nested, if text is
+left-aligned with the previous lines and the indentations are keeped:
+
+.. code:: rst
+
+   This is a ordinary paragraph.
+
+      This is a **quoted** paragraph.
+
+         This is a *nested* quoted paragraph.
+
+      This is another quoted paragraph
+      over two lines.
+
+Several block quotes may be separated from each other either by another ordinary
+paragraphs or using two periods as a separator:
+
+.. code:: rst
+
+   Famoues quotes from X Y:
+
+      First quote.
+
+   ..
+
+      Second quote.
+
+   ..
+
+      Third quote.
+
+At the end of block quotes, it is possible to give attribution to a specific
+author of that quotes, if before name are two hyphens:
+
+.. code::
+
+   This is a ordinary paragraph.
+
+      This is a super quote.
+
+      -- X Y
 
 Comments
 --------
@@ -419,9 +460,9 @@ end of documents:
 
    .. [1] Master documents are special ``index.rst`` files with a TOC.
 
-For short documents may be explicit numbers enough, but if a document is long
-or regularly changed, it is better to use auto-numbered footnotes to save
-time with overriding:
+For short documents may be explicit numbers enough, but if a document is long or
+regularly changed, it is better to use auto-numbered footnotes to save time with
+overriding:
 
 .. code:: rst
 
