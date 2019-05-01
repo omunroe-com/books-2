@@ -415,7 +415,7 @@ left-aligned with the previous lines and the indentations are keeped:
       over two lines.
 
 Several block quotes may be separated from each other either by another ordinary
-paragraphs or using two periods as a separator:
+paragraphs or using two periods as a separator (empty comment):
 
 .. code:: rst
 
@@ -445,6 +445,15 @@ author of that quotes, if before name are two hyphens:
 Comments
 --------
 
+Comments are hidden pagraphs, which starts with two periods followed by a space
+and other lines are left-aligned to this indentation:
+
+.. code:: rst
+
+   .. This is a comment
+      over two lines.
+
+      This is another paragraph inside this single comment.
 
 Footnotes
 ---------
