@@ -426,7 +426,7 @@ time with overriding:
 .. code:: rst
 
    ``#`` with overline is used as an adornment style for document titles in
-   master documents in Sphinx [#].
+   master documents in Sphinx [#]_.
 
    .. [#] Master documents are special ``index.rst`` files with a TOC.
 
