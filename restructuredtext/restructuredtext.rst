@@ -11,14 +11,15 @@
 
 :Abstract:
 
-   `reStructuredText`_ (reST) is primarily used in Python community for writing
-   technical documentation, both Python docstrings and standalone documents.
+   `reStructuredText`_ (RST or also reST) is primarily used in Python community
+   for writing technical documentation, both Python docstrings and standalone
+   documents.
 
-   Unlike `Markdown`_, reST covers officially many advanced markup, for example
+   Unlike `Markdown`_, |RST| covers officially many advanced markup, for example
    metadata, automatic table of contents, tables and semantic text. It has also
    a standardized way for writing custom extensions.
 
-   reST is commonly used with `Sphinx`_, which is a documentation generator
+   |RST| is commonly used with `Sphinx`_, which is a documentation generator
    originally developed for the official `Python documentation`_, but now it is
    independent from projects using a different programming language or none at
    all.
@@ -45,9 +46,9 @@ Markup
 Sections
 --------
 
-Sections headers are a single line of text with an underline or an underline
-and an overline of non-alphanumeric characters (adornment), which are at least
-as long as the text:
+Sections headers are a single line of text with an underline or an underline and
+an overline of non-alphanumeric characters (adornment), which are at least as
+long as the text:
 
 .. code:: rst
 
@@ -64,8 +65,8 @@ with heading levels through a document.
 The Python documentation has the following convention (with analogous heading
 levels in HTML), which may be followed:
 
-* ``#`` with overline and centered title text using 2 spaces at the left
-  edge, for parts (H1 in a master document in Sphinx) [#]_
+* ``#`` with overline and centered title text using 2 spaces at the left edge,
+  for parts (H1 in a master document in Sphinx) [#]_
 
   .. code:: rst
 
@@ -149,9 +150,9 @@ line:
 
    This is another paragraph.
 
-To preserve line breaks in paragraphs, a vertical bar ("|") with a space must
-be used at the left edge of each line with a line break in order to create
-line blocks:
+To preserve line breaks in paragraphs, a vertical bar ("|") with a space must be
+used at the left edge of each line with a line break in order to create line
+blocks:
 
 .. code:: rst
 
@@ -193,8 +194,8 @@ strong emphasis (boldface):
    *This part of text will be rendered in italics*,
    **while this one in bold**.
 
-reST is pretty smart when to not use italics or boldface, if there are spaces
-or asterisks inside a word:
+reST is pretty smart when to not use italics or boldface, if there are spaces or
+asterisks inside a word:
 
 .. code:: rst
 
@@ -207,16 +208,16 @@ asterisks must be spaces escaped:
 
    thisis\ **one**\ word (thisisoneword with "one" in bold)
 
-Escaping can be also used with asterisks or any other special markup found
-later in this book:
+Escaping can be also used with asterisks or any other special markup found later
+in this book:
 
 .. code:: rst
 
    Explicitly: \*italics\* (twice)
    Implicitly: \**bold** (once)
 
-Besides emphasis, text may be monospaced, which is used for inline code
-samples. Each character inside double backquotes ("``") is preserved:
+Besides emphasis, text may be monospaced, which is used for inline code samples.
+Each character inside double backquotes ("``") is preserved:
 
 .. code:: rst
 
@@ -309,9 +310,8 @@ Both bulleted and enumerated lists may be combined:
 Definition Lists
 ^^^^^^^^^^^^^^^^
 
-Definitions lists consists of a term and a definition for that term starting
-at the next line with indentation and separated by a blank line from other
-terms:
+Definitions lists consists of a term and a definition for that term starting at
+the next line with indentation and separated by a blank line from other terms:
 
 .. code:: rst
 
@@ -436,9 +436,9 @@ The two colons may appear at the end of text followed by a space:
 
       hello()
 
-Both previous examples may be even further shortened, when reST will left
-one colon instead of two colons at the end of the paragraph which will look
-exactly like in the first example:
+Both previous examples may be even further shortened, when reST will left one
+colon instead of two colons at the end of the paragraph which will look exactly
+like in the first example:
 
 .. code:: rst
 
@@ -684,3 +684,5 @@ __ https://en.wikipedia.org/wiki/ReStructuredText
    of contents.
 .. [#] Body elements are markup inside sections (paragraphs, lists, tables
    etc.).
+
+.. |RST| replace:: reStructuredText
