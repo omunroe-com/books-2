@@ -177,8 +177,8 @@ containing a line break:
 .. tip::
 
    The Python documentation uses maximally 80 characters per line except a few
-   special cases (tables, links, code samples), when it is allowed to exceed
-   this limit.
+   special cases (tables, hyperlinks, code samples), when it is allowed to
+   exceed this limit.
 
 Text styles
 -----------
