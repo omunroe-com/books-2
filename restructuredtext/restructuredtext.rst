@@ -608,6 +608,36 @@ all examples.
 Substitution
 ------------
 
+Substitions are words inside vertical bars ("|"), which will be during rendering
+substituted with other words according to the given inline directive, which was
+used, e.g. a directive for replacing text:
+
+.. code:: rst
+
+   |RST| is really long to type, so it is better to use a shorcut via
+   substitutions.
+
+   Also |PY 3| is mentioned a lot of times within a document, so it is better to
+   replace it with a specific version.
+
+   .. |RST| replace:: reStructuredText
+   .. |PY 3| replace:: Python 3.7.
+
+Other possible inline directives and directives in general are covered in the
+`Directives`_ section.
+
+.. tip::
+
+   Substitutions may be combined with hyperlinks:
+
+   .. code::
+
+      |RST|_ is really long to type, so it is better to use a shorcut via
+      substitutions.
+
+      .. |RST| replace:: reStructuredText
+      .. _RST: http://docutils.sourceforge.net/rst.html
+
 Directives
 ==========
 
