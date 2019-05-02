@@ -112,7 +112,7 @@ levels in HTML), which may be followed:
 
 For standalone documents out of documentation, if there is a need to use a
 document title with a subtitle, then the following adornment style is
-recommended by reST:
+recommended by |RST|:
 
 .. code:: rst
 
@@ -130,7 +130,7 @@ recommended by reST:
 
 .. tip::
 
-   There may exist a reST plugin to your editor, which can speed up creating
+   There may exist a |RST| plugin to your editor, which can speed up creating
    section headers by highlighting a section title and applying a keyboard
    shortcut for a specific heading level.
 
@@ -194,8 +194,8 @@ strong emphasis (boldface):
    *This part of text will be rendered in italics*,
    **while this one in bold**.
 
-reST is pretty smart when to not use italics or boldface, if there are spaces or
-asterisks inside a word:
+|RST| is pretty smart when to not use italics or boldface, if there are spaces
+or asterisks inside a word:
 
 .. code:: rst
 
@@ -315,7 +315,7 @@ the next line with indentation and separated by a blank line from other terms:
 
 .. code:: rst
 
-   reST
+   RST
       A shortcut for reStructuredText markup language.
 
    HTML
@@ -332,7 +332,7 @@ Definitions may contain more than one paragraph or other body elements:
 
 .. tip::
 
-   The Python documentation uses 3 spaces for indentation in reST documents
+   The Python documentation uses 3 spaces for indentation in |RST| documents
    (mainly due to Directives, described later in his book).
 
 Field Lists
@@ -343,7 +343,7 @@ in the first column and content (field body) in the second column:
 
 .. code:: rst
 
-   :Shortcut: reST
+   :Shortcut: RST or reST
    :Filename extension: ``.rst``
    :Reference documentation: www
 
@@ -387,13 +387,13 @@ is needed for the body elements on the next lines:
 
 .. note::
 
-   If reST documents are written inside Sphinx, then it is better to use its
+   If |RST| documents are written inside Sphinx, then it is better to use its
    directives for documenting command-line programs and options, because they
    more scalable, easier to maintain and better rendered in other text formats.
 
 .. tip::
 
-   There may exist a reST plugin to your editor which support automatic
+   There may exist a |RST| plugin to your editor which support automatic
    alignment in option lists by highlighting an option list and applying a
    keyboard shortcut.
 
@@ -436,7 +436,7 @@ The two colons may appear at the end of text followed by a space:
 
       hello()
 
-Both previous examples may be even further shortened, when reST will left one
+Both previous examples may be even further shortened, when |RST| will left one
 colon instead of two colons at the end of the paragraph which will look exactly
 like in the first example:
 
@@ -460,7 +460,7 @@ interactive interpreter (no need to indent code):
 
    Code samples using ``::`` markup are not highlighted at all, except the
    Python interactive examples. There are special directives for this case
-   (either in reST or Sphinx).
+   (either in |RST| or Sphinx).
 
 Block Quotes
 ------------
@@ -558,7 +558,7 @@ are left-aligned with the left square bracket:
 .. note::
 
    Each footnote is automatically hyperlinked to itself. It is possible in
-   rendered reST documents to click on an index in text, see a footnote at the
+   rendered |RST| documents to click on an index in text, see a footnote at the
    end of a document, click on the index next to the footnote and be back in
    text where I had been previously.
 
@@ -583,13 +583,13 @@ surrounded by blank lines between paragraphs:
    This is another paragraph.
 
 The Python documentation has no convention for the horizontal lines. Propably
-they are not used at all. However, the documentation for reST uses hyphens in
+they are not used at all. However, the documentation for |RST| uses hyphens in
 all examples.
 
 .. note::
 
    The purpose of horizontal lines is to signal a change in a subject between
-   paragraphs in literature. In reST documents, the horizontal lines are rather
+   paragraphs in literature. In |RST| documents, the horizontal lines are rather
    used at the end of files with footnotes.
 
    If your editor allows you to quickly insert 80 hyphens at once, then you may
@@ -647,7 +647,7 @@ Interpreted Text Roles
 Glossary
 ========
 
-reST uses officially the following terminology for markup syntax:
+|RST| uses officially the following terminology for markup syntax:
 
 Citations
    `Footnotes`_ with alphanumeric characters plus hyphens, underscores and
