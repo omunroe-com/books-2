@@ -1,8 +1,7 @@
 # Davie's Technical Books
 
-My personal technical books of software I have been using.
-
-Beside these books, there are complementary projects:
+My personal technical books of software I have been using. Beside these books,
+there are complementary projects:
 
 * [Notes][notes] - notes and examples from the books
 * [Cheatsheets][cheatsheets] - cheatsheets from the notes
