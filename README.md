@@ -4,8 +4,8 @@ My personal technical books of software I have been using.
 
 Beside these books, there are complementary projects:
 
-* [notes][notes] - brief notes and examples from the books
-* [cheatsheets][cheatsheets] - brief cheatsheets from the notes
+* [Notes][notes] - notes and examples from the books
+* [Cheatsheets][cheatsheets] - cheatsheets from the notes
 
 [notes]: https://github.com/daviebadger/notes
 [cheatsheets]: https://github.com/daviebadger/cheatsheets
