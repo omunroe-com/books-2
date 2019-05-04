@@ -400,6 +400,113 @@ is needed for the body elements on the next lines:
 Hyperlinks
 ----------
 
+Hyperlinks point to internal or external location. The most easiest way to
+create a hyperlink target is to place an URI into text:
+
+.. code:: rst
+
+   The Python documentation is located on https://docs.python.org/.
+
+Alternatively, URIs may be embedded (surrounded by angle brackets "<>") within
+a hyperlink text inside backquotes (also backticks "`") followed by an
+underscore:
+
+.. code:: rst
+
+   The Python documentation is `HERE <https://docs.python.org/>`_.
+
+Nevertheless, in |RST| philosophy, hyperlink targets should be placed away of
+text due to readability. Possible places are the end of a section or a whole
+document. Hyperlinks within text should point to these targets.
+
+Hyperlinks may be single words followed by an underscore or several words inside
+backqoutes also followed by an underscore, which are associated with hyperlink
+targets leading to URIs:
+
+.. code:: rst
+
+   Python_ has `official documentation`_
+
+   .. _Python: https://www.python.org/
+   .. _official documentation: https://docs.python.org/
+
+Within hyperlink targets it is possible to group several targets and point to
+single location or point from one hyperlink target to another hyperlink target:
+
+.. code:: rst
+
+   Python_, `Python 3`_, `Python 3.7`_, all point to the same location_.
+
+   .. _Python:
+   .. _Python 3:
+   .. _Python 3.7: https://www.python.org/
+   .. _location: Python_
+
+Hyperlinks can be anonymous (not named), which may be handy in cases when same
+hyperlink text need to target two different locations. They may be also used in
+a list with hyperlinks. Anonymous hyperlinks require two trailing underscores:
+
+.. code:: rst
+
+   References
+   ==========
+
+   * link__
+   * `long link`__
+
+   .. __: www for link
+   .. __: www for long link
+
+The anonymous hyperlink targets may be shortened:
+
+.. code:: rst
+
+   References
+   ==========
+
+   * link__
+   * `long link`__
+
+   __ www for link
+   __ www for long link
+
+.. note::
+
+   If hyperlinks contain colons, then they must be escaped or backquoted:
+
+   .. code::
+
+      `Link: with colon`_ or `Another link: with colon`_
+
+      .. _`Link: with colon`: ...
+      .. _Another link\: with colon: ...
+
+.. tip::
+
+   Sections in documents may be also hyperlinked according to their titles:
+
+   .. code:: rst
+
+      Section A
+      =========
+
+      See `Section B`_ below.
+
+      Section B
+      =========
+
+   Other body elements may be also hyperlinked, if they have internal hyperlink
+   targets in the prior paragraph:
+
+   .. code:: rst
+
+      .. _List of shortcuts:
+
+      * rst / RST
+      * reST
+
+      reST has a few shortcuts, see `List of shortcuts`_ (above).
+
 Tables
 ------
 
