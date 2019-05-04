@@ -726,6 +726,9 @@ Citations
    Citations are rarely used, footnotes are much more prefered.
 Doctest Blocks
    `Code Samples`_ with interactive Python interpreter.
+Inline Markup
+   `Text Styles`_ plus markup inside paragraphs, like `Hyperlinks`_,
+   `Footnotes`_ and `Substituion`_ without parts inside ``..`` constructs.
 Literal Blocks
    `Code Samples`_
 Transitions
