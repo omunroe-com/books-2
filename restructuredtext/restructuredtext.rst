@@ -412,6 +412,8 @@ ending a table. Each column must be separated by two spaces:
 
 .. code:: rst
 
+   This is a simple table:
+
    =========  ========  ======  ===
    Firstname  Lastname  Gender  Age
    =========  ========  ======  ===
@@ -447,6 +449,35 @@ that column. Within these long columns, table headers may be centered:
 
 Grid Tables
 ^^^^^^^^^^^
+
+Grid tables are tables with full suport for row spans, column spans, empty cells
+and body elements inside cells. However, these features come at cost, because
+grid tables are really cumbersome to design without a |RST| plugin in an editor.
+
+Grid tables consists of plus signs ("+") as corners, vertical bars ("|") as
+column separators, minus signs ("-") as row separators and equal signs ("=") as
+separator between table headers and other rows:
+
+.. code:: rst
+
+   This is a grid table:
+
+   +---------------+--------------------+----------+
+   | Header A      | Header B           | Header C |
+   +===============+====================+==========+
+   | A1            | B1 + C1 (row span)            |
+   +---------------+--------------------+----------+
+   | A2 + A3       | * first item       | C2       |
+   | (column span) | * second item      |          |
+   |               | * third item       |          |
+   |               +--------------------+----------+
+   |               | C3 is **empty**    |          |
+   +---------------+--------------------+----------+
+
+.. note::
+
+   |RST| provides directives for simplier work with tables, which will be
+   covered later in this book.
 
 Code Samples
 ------------
