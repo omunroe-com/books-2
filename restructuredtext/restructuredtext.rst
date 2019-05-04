@@ -406,6 +406,45 @@ Tables
 Simple Tables
 ^^^^^^^^^^^^^
 
+Simple tables are tables without row or column spans (only in headers), in which
+are equal signs ("=") used as an adornment style for table headers and for
+ending a table. Each column must be separated by two spaces:
+
+.. code:: rst
+
+   =========  ========  ======  ===
+   Firstname  Lastname  Gender  Age
+   =========  ========  ======  ===
+   Davie      Badger    Male    24
+   Jacob      Badger    Male    19
+   =========  ========  ======  ===
+
+All columns except the last one must be adorned as long as the widest cell in
+that column. Within these long columns, table headers may be centered:
+
+.. code:: rst
+
+   =======  =======  ===
+      A        B      C
+   =======  =======  ===
+   Value A  Value X  Value 1
+   Value B  Value Y  Value 2
+   Value C  Value Z  Value 3
+   =======  =======  ===
+
+.. note::
+
+   Although simple tables enable to use column spans in table headers or empty
+   cells via single backward slash ("\") in that cells, it is better to use
+   `Grid Tables`_ for these features and leave simple tables to be just simple
+   tables.
+
+.. tip::
+
+   There may exist a |RST| plugin to your editor, which can speed up modifying
+   simple tables by highlighting a table and applying a keyboard shortcut for
+   extending / shortering adornment and realigning text within that table.
+
 Grid Tables
 ^^^^^^^^^^^
 
