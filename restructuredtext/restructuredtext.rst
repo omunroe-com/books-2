@@ -417,11 +417,11 @@ underscore:
 
 Nevertheless, in |RST| philosophy, hyperlink targets should be placed away of
 text due to readability. Possible places are the end of a section or a whole
-document. Hyperlinks within text should point to these targets.
+document. Hyperlinks within text should reference to these targets.
 
-Hyperlinks may be single words followed by an underscore or several words inside
-backqoutes also followed by an underscore, which are associated with hyperlink
-targets leading to URIs:
+Hyperlink references may be single words followed by an underscore or several
+words inside backqoutes also followed by an underscore, which are associated
+with hyperlink targets leading to URIs:
 
 .. code:: rst
 
@@ -431,7 +431,8 @@ targets leading to URIs:
    .. _official documentation: https://docs.python.org/
 
 Within hyperlink targets it is possible to group several targets and point to
-single location or point from one hyperlink target to another hyperlink target:
+single location or point from one hyperlink target to another hyperlink
+reference:
 
 .. code:: rst
 
@@ -472,7 +473,8 @@ The anonymous hyperlink targets may be shortened:
 
 .. note::
 
-   If hyperlinks contain colons, then they must be escaped or backquoted:
+   If hyperlink references contain colons, then they must be escaped or
+   backquoted within hyperlink targets:
 
    .. code:: rst
 
@@ -495,8 +497,8 @@ The anonymous hyperlink targets may be shortened:
       Section B
       =========
 
-   Other body elements may be also hyperlinked, if they have internal hyperlink
-   targets in the prior paragraph:
+   Other body elements may be also hyperlinked, if they have an internal
+   hyperlink reference in the prior paragraph:
 
    .. code:: rst
 
