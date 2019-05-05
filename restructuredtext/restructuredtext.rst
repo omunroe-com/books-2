@@ -474,7 +474,7 @@ The anonymous hyperlink targets may be shortened:
 
    If hyperlinks contain colons, then they must be escaped or backquoted:
 
-   .. code::
+   .. code:: rst
 
       `Link: with colon`_ or `Another link: with colon`_
 
@@ -676,7 +676,7 @@ paragraphs or using two periods as a separator (empty comment):
 At the end of block quotes, it is possible to give attribution to a specific
 author of that quotes, if before name are two hyphens:
 
-.. code::
+.. code:: rst
 
    This is a ordinary paragraph.
 
