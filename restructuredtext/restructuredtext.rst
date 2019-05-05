@@ -65,21 +65,21 @@ The Python documentation has the following convention (with analogous heading
 levels in HTML), which may be followed:
 
 * ``#`` with overline and centered title text using 2 spaces at the left edge,
-  for parts (H1 in a master document in Sphinx) [#]_
+  for parts (H1 in master documents in Sphinx) [#]_
 
   .. code:: rst
 
-     #########
-       Title
-     #########
+     ##################
+       Document Title
+     ##################
 
-* ``*`` with overline, for chapters (H1 in a common document)
+* ``*`` with overline, for chapters (H1 in ordinary documents)
 
   .. code:: rst
 
-     *****
-     Title
-     *****
+     **************
+     Document Title
+     **************
 
 * ``=`` for sections (H2)
 
