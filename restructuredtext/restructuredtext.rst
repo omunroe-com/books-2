@@ -848,12 +848,14 @@ References
 
 * `Python Developer's Guide - Documenting Python`__
 * `reStructuredText`__
+* `reStructuredText - Markup Specification`__
 * `Sphinx - Getting Started`__
 * `Sphinx - reStructuredText Primer`__
 * `Wikipedia - reStructuredText`__
 
 __ https://devguide.python.org/documenting/
 __ reStructuredText_
+__ http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html
 __ https://www.sphinx-doc.org/en/master/usage/quickstart.html
 __ http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 __ https://en.wikipedia.org/wiki/ReStructuredText
