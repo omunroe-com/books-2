@@ -613,6 +613,28 @@ separator between table headers and other rows:
 
 .. note::
 
+   If vertical bars are used inside cells, for example in inline code samples,
+   then it is really important, where are the vertical bars located in that
+   cells.
+
+   |RST| may be confused, if a vertical bar is placed right in a place, which
+   indicates column separation. Therefore a blank line on the next line is
+   needed in this case to signal |RST| that the vertical bar has a different
+   purpose:
+
+   .. code:: rst
+
+      +--------------+----------+-----------+-----------+
+      | row 1, col 1 | column 2 | column 3  | column 4  |
+      +--------------+----------+-----------+-----------+
+      | row 2        | Use the command ``ls | more``.   |
+      |              |                                  |
+      +--------------+----------+-----------+-----------+
+      | row 3        |          |           |           |
+      +--------------+----------+-----------+-----------+
+
+.. tip::
+
    |RST| provides directives for simplier work with tables, which will be
    covered later in this book.
 
