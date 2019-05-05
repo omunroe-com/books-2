@@ -10,7 +10,6 @@
 :Copyright: `Creative Commons Attribution 4.0 International Public License`_
 
 :Abstract:
-
    `reStructuredText`_ (RST or also reST) is primarily used in Python community
    for writing technical documentation, both Python docstrings and standalone
    documents.
@@ -356,6 +355,35 @@ Field bodies may contain more than one paragraph or other body elements:
       * lists
 
       etc.
+
+.. note::
+
+   If a field list is used right after a document title or a subtitle, then
+   the field list is supposed to be a bibliographic field list (metadata about
+   the document):
+
+   .. code:: rst
+
+      **************
+      Document Title
+      **************
+
+      :Author: Davie Badger
+
+   Tbere are special bibliographic fields, which are rendered differently than
+   other fields:
+
+   * ``:Abstract:`` - body elements are allowed
+   * ``:Address:`` - a multi-line address with preserved newlines
+   * ``:Author:``
+   * ``:Authors:`` - a bulleted list of authors
+   * ``:Contact:``
+   * ``:Copyright:``
+   * ``:Date:``
+   * ``:Dedication:`` - body elements are allowed
+   * ``:Organization:``
+   * ``:Status:``
+   * ``:Version:``
 
 Option Lists
 ^^^^^^^^^^^^
