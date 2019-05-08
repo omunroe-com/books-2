@@ -865,7 +865,7 @@ Other possible inline directives and directives in general are covered in the
 
    Substitutions may be combined with hyperlinks:
 
-   .. code::
+   .. code:: rst
 
       |RST|_ is really long to type, so it is better to use a shorcut via
       substitutions.
@@ -876,11 +876,16 @@ Other possible inline directives and directives in general are covered in the
 Directives
 ==========
 
-Others
-------
+Roles
+-----
+
+Directives for manipulating `Interpreted Text Roles`_.
 
 default-role
 ^^^^^^^^^^^^
+
+role
+^^^^
 
 Interpreted Text Roles
 ======================
@@ -909,7 +914,7 @@ be use as a title of a book or any other text materials:
    better to use always explicit roles.
 
 PEP
-^^^
+---
 
 Create a link to a specific `PEP`_ (Python Enhancement Proposal):
 
@@ -920,7 +925,7 @@ Create a link to a specific `PEP`_ (Python Enhancement Proposal):
 .. _PEP: https://www.python.org/dev/peps/
 
 RFC
-^^^
+---
 
 Create a link to a specific `RFC`_ (Request For Comments):
 
