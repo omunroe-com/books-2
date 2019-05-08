@@ -876,8 +876,37 @@ Other possible inline directives and directives in general are covered in the
 Directives
 ==========
 
+Others
+------
+
+default-role
+^^^^^^^^^^^^
+
 Interpreted Text Roles
 ======================
+
+Interpreted text roles are pieces of text surrounded by single backquotes ("`")
+and implicitly or explicitly prefixed with a role, which could mean a special
+text style or a shortcut instead of a hyperlink, and with spaces around (may be
+escaped):
+
+.. code:: rst
+
+   * this is special `interpreted text` without a role (implicit, using the default)
+   * thisis\ `one`\ word (thisisoneword with interpreted "one" word)
+
+The default role is `:title-reference:` (also `:title:`), which is intended to
+be use as a title of a book or any other text materials:
+
+.. code:: rst
+
+   * `Super Title` is a book from X (implicit)
+   * :title:`Another Super Title` is also a book from X (explicit)
+
+.. note::
+
+   The default role may be changed via `default-role`_ directive, however it is
+   better to use always explicit roles.
 
 Glossary
 ========
