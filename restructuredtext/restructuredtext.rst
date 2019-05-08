@@ -42,7 +42,11 @@
 .. _Sphinx: http://www.sphinx-doc.org
 
 Markup
-=======
+======
+
+Markup is a set of special characters within text. Parsers thanks to them know,
+how to transform the given text in a document to other text or file formats, for
+example HTML or PDF.
 
 Sections
 --------
@@ -146,8 +150,8 @@ line:
 .. code:: rst
 
    This is a paragraph over
-   three lines, but the line breaks will not be preserved after
-   transforming reST documents to other text formats as HTML or PDF.
+   three lines, but the line breaks
+   will not be preserved.
 
    This is another paragraph.
 
