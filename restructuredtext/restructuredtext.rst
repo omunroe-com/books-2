@@ -908,6 +908,17 @@ be use as a title of a book or any other text materials:
    The default role may be changed via `default-role`_ directive, however it is
    better to use always explicit roles.
 
+PEP
+^^^
+
+Create a link to a specific `PEP`_ (Python Enhancement Proposal):
+
+.. code:: rst
+
+   See :PEP:`8` for Python style guide.
+
+.. _PEP: https://www.python.org/dev/peps/
+
 Glossary
 ========
 
