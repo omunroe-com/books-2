@@ -17,7 +17,7 @@
    Unlike `Markdown`_, |RST| covers officially many advanced markup, for example
    document metadata, automatic table of contents, tables and semantic text. It
    has also a standardized way for writing custom extensions (directives and
-   interpreted text roles) via `docutils`_ library written in Python.
+   interpreted text roles) via `Docutils`_ library written in Python.
 
    |RST| is commonly used with `Sphinx`_, which is a documentation generator
    originally developed for the official `Python documentation`_, but now it is
@@ -35,7 +35,7 @@
 
 .. _Creative Commons Attribution 4.0 International Public License: https://creativecommons.org/licenses/by/4.0/
 .. _Davie Badger: https://github.com/daviebadger
-.. _docutils: http://docutils.sourceforge.net/
+.. _Docutils: http://docutils.sourceforge.net/
 .. _Markdown: https://daringfireball.net/projects/markdown/
 .. _Python documentation: https://docs.python.org
 .. _reStructuredText: http://docutils.sourceforge.net/rst.html
@@ -918,6 +918,17 @@ Create a link to a specific `PEP`_ (Python Enhancement Proposal):
    See :PEP:`8` for Python style guide.
 
 .. _PEP: https://www.python.org/dev/peps/
+
+RFC
+^^^
+
+Create a link to a specific `RFC`_ (Request For Comments):
+
+.. code:: rst
+
+   See :RFC:`3339` for standard date and time formats.
+
+.. _RFC: https://tools.ietf.org/rfc/index
 
 Glossary
 ========
