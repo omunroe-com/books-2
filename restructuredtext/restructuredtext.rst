@@ -913,6 +913,17 @@ be use as a title of a book or any other text materials:
    The default role may be changed via `default-role`_ directive, however it is
    better to use always explicit roles.
 
+superscript Role
+----------------
+
+Create superscript:
+
+.. code:: rst
+
+   `E = mc^2` may be written as:
+
+   E = mc\ :sup:`2`
+
 math Role
 ---------
 
