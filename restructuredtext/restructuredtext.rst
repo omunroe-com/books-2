@@ -546,6 +546,9 @@ The anonymous hyperlink targets may be shortened:
 Tables
 ------
 
+|RST| has two builtin types of tables, simple and grid. Other advanced table
+types use `Directives`_ notation.
+
 Simple Tables
 ^^^^^^^^^^^^^
 
