@@ -924,6 +924,28 @@ Create superscript:
 
    E = mc\ :sup:`2`
 
+subscript Role
+--------------
+
+Create subscript:
+
+.. code:: rst
+
+   H20 may be written as:
+
+   H\ :sub:`2`\ O
+
+.. tip::
+
+   Superscript or subscript are ideal candidates for substituion for improving
+   readability of text:
+
+   .. code:: rst
+
+      |H20| is one of the famoust formulars.
+
+      .. |H20| replace:: H\ :sub:`2`\ O
+
 math Role
 ---------
 
