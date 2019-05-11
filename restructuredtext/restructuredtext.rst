@@ -236,6 +236,17 @@ Each character inside double backquotes ("``") is preserved:
 Lists
 -----
 
+|RST| has oficially five types of lists, namely:
+
+* bulleted
+* numbered (also enumerated)
+* definition
+* field
+* option
+
+Bulleted and numbered lists are classic lists. Definition lists are rather
+dictionaries (glossary). Field and option lists are rather special tables.
+
 Bulleted Lists
 ^^^^^^^^^^^^^^
 
