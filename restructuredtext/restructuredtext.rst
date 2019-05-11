@@ -913,6 +913,18 @@ be use as a title of a book or any other text materials:
    The default role may be changed via `default-role`_ directive, however it is
    better to use always explicit roles.
 
+math Role
+---------
+
+Create inline mathematical notation using `LaTeX` math mode without enclosing
+formulas in `$ ... $`:
+
+.. code:: rst
+
+   This is a simple formula: `f(x) = x^2`.
+
+.. _LaTeX:: https://en.wikibooks.org/wiki/LaTeX/Mathematics
+
 PEP Role
 --------
 
@@ -961,6 +973,7 @@ References
 * `Python Developer's Guide - Documenting Python`__
 * `reStructuredText`__
 * `reStructuredText - Markup Specification`__
+* `reStructuredText - Interpreted Text Roles`__
 * `Sphinx - Getting Started`__
 * `Sphinx - reStructuredText Primer`__
 * `Wikipedia - reStructuredText`__
@@ -968,6 +981,7 @@ References
 __ https://devguide.python.org/documenting/
 __ reStructuredText_
 __ http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html
+__ http://docutils.sourceforge.net/docs/ref/rst/roles.html
 __ https://www.sphinx-doc.org/en/master/usage/quickstart.html
 __ http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 __ https://en.wikipedia.org/wiki/ReStructuredText
