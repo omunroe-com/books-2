@@ -890,6 +890,63 @@ Other possible inline directives and directives in general are covered in the
 Directives
 ==========
 
+Directives are the primary extension mechanism of |RST| (the secondary are
+`Interpreted Text Roles`_), how to extend or modify documents. Syntax is similar
+to `Hyperlinks`_, `Footnotes`_ or `Substitutions`_.
+
+They consists of two periods followed by a space, name of directive, two colons
+and content for the directive:
+
+.. code:: rst
+
+   .. directive-name:: content
+
+   or
+
+   .. directive-name::
+
+      Long content over
+      two lines.
+
+Each directive may have options (configuration for that directive) via a field
+list inside the directive. There are two common options, ``class`` and
+``name``:
+
+.. code:: rst
+
+   .. directive-name:: content
+      :class: a b-b c-c-c
+      :name: Human name for this directive
+
+   or
+
+   .. directive-name::
+      :class: a b c
+      :name: Human name for this directive
+
+      Long content over
+      two lines.
+
+The ``class`` option allows to define one or more classes separated by a space
+for HTML elements and may be additionally styled via CSS, if the output of a
+document will be HTML page.
+
+The ``name`` allows to add custom human-readable name to directives. The name is
+then used like an ID attribute in HTML. This means that each directive with the
+name option may be referenced (hyperlinked):
+
+.. code:: rst
+
+   .. directive-name:: content
+      :name: Super name
+
+   See also `Super name`_.
+
+.. important::
+
+   When using the ``name`` option inside directives, the name (text) must be
+   unique across a document, otherwise a |RST| parser may raise an error.
+
 Roles
 -----
 
