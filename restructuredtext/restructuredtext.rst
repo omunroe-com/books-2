@@ -895,11 +895,11 @@ Roles
 
 Directives for manipulating `Interpreted Text Roles`_.
 
-default-role
-^^^^^^^^^^^^
+default-role Directive
+^^^^^^^^^^^^^^^^^^^^^^
 
-role
-^^^^
+role Directive
+^^^^^^^^^^^^^^
 
 Interpreted Text Roles
 ======================
