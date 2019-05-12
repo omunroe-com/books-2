@@ -947,8 +947,20 @@ name option may be referenced (hyperlinked):
    When using the ``name`` option inside directives, the name (text) must be
    unique across a document, otherwise a |RST| parser may raise an error.
 
-Roles
------
+Image Directives
+----------------
+
+Table Directives
+----------------
+
+Document Directives
+-------------------
+
+HTML Directives
+---------------
+
+Role Directives
+---------------
 
 Directives for manipulating `Interpreted Text Roles`_.
 
