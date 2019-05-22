@@ -434,7 +434,7 @@ is needed for the body elements on the next lines:
 
    If |RST| documents are written inside Sphinx, then it is better to use its
    directives for documenting command-line programs and options, because they
-   more scalable, easier to maintain and better rendered in other text formats.
+   more scalable, easier to maintain and better rendered in other formats.
 
 .. tip::
 
@@ -984,6 +984,66 @@ Set the default role within a document:
 
 role Directive
 ^^^^^^^^^^^^^^
+
+Create a new dummy interpreted text role, which may be further styled in other
+formats, usually in HTML via CSS class style using the name of the new role:
+
+.. code:: rst
+
+   .. role:: strikethrough
+
+   This :strikethrough:`text` may represent strikethrough, if this document will
+   be converted to HTML and styled via CSS, like::
+
+      .strikethrough {
+        text-decoration: line-through;
+      }
+
+New roles can be also created from already existing roles. The most easiest
+variant is using an inheritance without additional configuration:
+
+.. code:: rst
+
+   .. role:: strikethrough
+   .. role:: strike(strikethrough)
+
+   This :strike:`text` may represent strikethrough.
+
+There exists two roles (not covered within `Interpreted Text Roles`_), which are
+perfect candidates for creating custom roles with additional configuration:
+
+* ``code``
+
+  * enable inline code highliting:
+
+    .. code:: rst
+
+       .. role:: python(code)
+          :language: python
+
+       Try :python:`import this` in your Python interpreter.
+
+* ``raw``
+
+  * enable inline raw markup used in other formats (one or more space-separated
+    formats):
+
+    .. code:: rst
+
+       .. role:: html(raw)
+          :format: html
+
+       Inject JS script :html:`<script>console.log('Hello World')`.
+
+.. note::
+
+   Inline code examples are highligted via Pygments_ syntax highlighter, unless
+   |RST| documents are parsed in different parsers (not using Docutils at all).
+
+   List of supported languages (lexers) is in the `Pygments documentation`_.
+
+.. _Pygments: http://pygments.org/
+.. _Pygments documentation: http://pygments.org/docs/lexers/
 
 Interpreted Text Roles
 ======================
