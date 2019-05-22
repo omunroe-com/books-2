@@ -1014,24 +1014,24 @@ be use as a title of a book or any other text materials:
 superscript Role
 ----------------
 
-Create superscript:
+Create superscript (alias `:sup:`):
 
 .. code:: rst
 
    `E = mc^2` may be written as:
 
-   E = mc\ :sup:`2`
+   E = mc\ :superscript:`2` or E = mc\ :sup:`2`
 
 subscript Role
 --------------
 
-Create subscript:
+Create subscript (alias `:sub:`):
 
 .. code:: rst
 
    H20 may be written as:
 
-   H\ :sub:`2`\ O
+   H\ :subscript:`2`\ O or H\ :sub:`2`\ O
 
 .. tip::
 
