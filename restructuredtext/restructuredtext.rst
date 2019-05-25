@@ -10,9 +10,10 @@
 :Copyright: `Creative Commons Attribution 4.0 International Public License`_
 
 :Abstract:
-   `reStructuredText`_ (RST or also reST) is primarily used in Python community
+   `reStructuredText`_ (RST or also reST) is heavily used in Python community
    for writing technical documentation, both Python docstrings and standalone
-   documents.
+   documents. Other notable projects using |RST| for documentation are Blender_,
+   CMake_ or `Linux Kernel`_.
 
    Unlike `Markdown`_, |RST| covers officially many advanced markup, for example
    document metadata, automatic table of contents, tables and semantic text. It
@@ -33,9 +34,12 @@
    :depth: 3
    :suffix: .
 
+.. _Blender: https://docs.blender.org/manual/en/latest/
+.. _CMake: https://cmake.org/cmake/help/latest/
 .. _Creative Commons Attribution 4.0 International Public License: https://creativecommons.org/licenses/by/4.0/
 .. _Davie Badger: https://github.com/daviebadger
 .. _Docutils: http://docutils.sourceforge.net/
+.. _Linux Kernel: https://www.kernel.org/doc/html/latest/
 .. _Markdown: https://daringfireball.net/projects/markdown/
 .. _Python documentation: https://docs.python.org
 .. _reStructuredText: http://docutils.sourceforge.net/rst.html
@@ -1169,6 +1173,7 @@ References
 * `Sphinx - Getting Started`__
 * `Sphinx - reStructuredText Primer`__
 * `Wikipedia - reStructuredText`__
+* `Wikipedia - Sphinx (documentation generator)`
 
 __ https://devguide.python.org/documenting/
 __ reStructuredText_
@@ -1178,6 +1183,7 @@ __ http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html
 __ https://www.sphinx-doc.org/en/master/usage/quickstart.html
 __ http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 __ https://en.wikipedia.org/wiki/ReStructuredText
+__ https://en.wikipedia.org/wiki/Sphinx_(documentation_generator)
 
 --------------------------------------------------------------------------------
 
