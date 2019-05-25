@@ -964,7 +964,7 @@ Role Directives
 
 Directives for manipulating `Interpreted Text Roles`_.
 
-default-role Directive
+Default-role Directive
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Set the default role within a document:
@@ -982,7 +982,7 @@ Set the default role within a document:
    role in a document. With explicit roles, I know exactty how the given role
    will be interpreted.
 
-role Directive
+Role Directive
 ^^^^^^^^^^^^^^
 
 Create a new dummy interpreted text role, which may be further styled in other
@@ -1071,7 +1071,7 @@ be use as a title of a book or any other text materials:
    The default role may be changed via `default-role`_ directive, however it is
    better to use always explicit roles.
 
-superscript Role
+Superscript Role
 ----------------
 
 Create superscript (alias `:sup:`):
@@ -1082,7 +1082,7 @@ Create superscript (alias `:sup:`):
 
    E = mc\ :superscript:`2` or E = mc\ :sup:`2`
 
-subscript Role
+Subscript Role
 --------------
 
 Create subscript (alias `:sub:`):
@@ -1104,7 +1104,7 @@ Create subscript (alias `:sub:`):
 
       .. |H20| replace:: H\ :sub:`2`\ O
 
-math Role
+Math Role
 ---------
 
 Create inline mathematical notation using `LaTeX` math mode without enclosing
