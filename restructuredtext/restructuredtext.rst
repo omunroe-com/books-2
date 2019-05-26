@@ -880,6 +880,17 @@ used, e.g. a directive for replacing text:
 Other possible inline directives and directives in general are covered in the
 `Directives`_ section.
 
+.. note::
+
+   Like in text styles, if a substituion is needed inside a word, then it needs
+   spaces around (espaced) in order to be working:
+
+   .. code:: rst
+
+      Thisis\ |one|\ word
+
+      .. |one| replace:: single
+
 .. tip::
 
    Substitutions may be combined with hyperlinks:
@@ -979,6 +990,43 @@ Replace text in substitutions:
 
 Unicode Directive
 ^^^^^^^^^^^^^^^^^
+
+Convert unicode numbers to characters:
+
+.. code:: rst
+
+   .. |copy| unicode:: 0xA9
+
+   Copyright |copy| Davie Badger 2019.
+
+Unicode numbers can be followed by a comment, which will not be rendered:
+
+.. code:: rst
+
+   .. |copy| unicode:: 0xA9 .. copyright sign
+
+   Copyright |copy| Davie Badger 2019.
+
+.. note::
+
+   Special symbols should be always used via unicode substitutions, if they are
+   impossible to type via a keyboard.
+
+.. tip::
+
+   The unicode directive allows to use trim options as flags (no content for
+   the trim fields):
+
+   * ``:ltrim:`` - remove left whitespaces after a substitution
+   * ``:rtrim:`` - remove right whitespaces after a substitution
+   * ``:trim:`` - remove left and right whitespaces after a substitution
+
+   .. code:: rst
+
+      Davie Badger |TM| will be rendered like ``Davie Badger^TM``.
+
+      .. |TM| unicode:: U+2122
+         :ltrim:
 
 Date Directive
 ^^^^^^^^^^^^^^
