@@ -21,7 +21,7 @@
    interpreted text roles) via `Docutils`_ library written in Python.
 
    |RST| is commonly used with `Sphinx`_, which is a documentation generator
-   originally developed for the official `Python documentation`_, but now it is
+   originally developed for official `Python documentation`_, but now it is
    independent from projects using a different programming language or none at
    all.
 
@@ -71,8 +71,8 @@ Although there are many non-alphanumeric characters, none of them is associated
 with a specific heading level. Therefore, it is very important to be consistent
 with heading levels through a document.
 
-The Python documentation has the following convention (with analogous heading
-levels in HTML), which may be followed:
+Python documentation has the following convention (with analogous heading levels
+in HTML), which may be followed:
 
 * ``#`` with overline and centered title text using 2 spaces at the left edge,
   for parts (H1 in master documents in Sphinx) [#]_
@@ -186,7 +186,7 @@ containing a line break:
 
 .. tip::
 
-   The Python documentation uses maximally 80 characters per line except a few
+   Python documentation uses maximally 80 characters per line except a few
    special cases (tables, hyperlinks, code samples), when it is allowed to
    exceed this limit.
 
@@ -255,7 +255,7 @@ Bulleted Lists
 ^^^^^^^^^^^^^^
 
 Bulleted lists consists of a bullet point character, usually an asterisk (like
-in the Python documentation) followed by one space and an item:
+in Python documentation) followed by one space and an item:
 
 .. code:: rst
 
@@ -295,7 +295,7 @@ Numbered Lists
 ^^^^^^^^^^^^^^
 
 Numbered (enumerated) lists consists of a number and a formatting type, usually
-a period (like in the Python documentation) followed by one space and an item:
+a period (like in Python documentation) followed by one space and an item:
 
 .. code:: rst
 
@@ -352,7 +352,7 @@ Definitions may contain more than one paragraph or other body elements:
 
 .. tip::
 
-   The Python documentation uses 3 spaces for indentation in |RST| documents
+   Python documentation uses 3 spaces for indentation in |RST| documents
    (mainly due to Directives, described later in his book).
 
 Field Lists
@@ -454,7 +454,7 @@ create a hyperlink target is to place an URI into text:
 
 .. code:: rst
 
-   The Python documentation is located on https://docs.python.org/.
+   Python documentation is located on https://docs.python.org/.
 
 Alternatively, URIs may be embedded (surrounded by angle brackets "<>") within
 a hyperlink text inside backquotes (also backticks "`") followed by an
@@ -462,7 +462,7 @@ underscore:
 
 .. code:: rst
 
-   The Python documentation is `HERE <https://docs.python.org/>`_.
+   Python documentation is `HERE <https://docs.python.org/>`_.
 
 Nevertheless, in |RST| philosophy, hyperlink targets should be placed away of
 text due to readability. Possible places are the end of a section or a whole
@@ -835,9 +835,9 @@ surrounded by blank lines between paragraphs:
 
    This is another paragraph.
 
-The Python documentation has no convention for the horizontal lines. Propably
-they are not used at all. However, the documentation for |RST| uses hyphens in
-all examples.
+Python documentation has no convention for the horizontal lines. Propably
+they are not used at all. However, documentation for |RST| uses hyphens in all
+examples.
 
 .. note::
 
@@ -932,7 +932,7 @@ list inside the directive. There are two common options, ``class`` and
       two lines.
 
 The ``class`` option allows to define one or more classes separated by a space
-for HTML elements and may be additionally styled via CSS, if the output of a
+for HTML elements and may be additionally styled via CSS, if output of a
 document will be HTML page.
 
 The ``name`` allows to add custom human-readable name to directives. The name is
@@ -962,6 +962,47 @@ Document Directives
 
 HTML Directives
 ---------------
+
+Meta Directive
+^^^^^^^^^^^^^^
+
+Add HTML metadata, if a document will be converted to HTML and metadata is
+desired:
+
+.. code:: rst
+
+   .. meta::
+      :author: Davie Badger
+      :description: reStructuredText is a markup language used for documentation.
+      :keywords: rst, reST, reStructuredText
+
+The meta directive supports out of box meta tags with name attributes in field
+lists and content for these fields. The previous code sample would be rendered
+as:
+
+.. code:: rst
+
+   <meta name="author" content="Davie Badger">
+   <meta name="description" content="reStructuredText is a markup language used for documentation.">
+   <meta name="keywords" content="rst, reST, reStructuredText">
+
+Other meta tags and attributes may be supported (not all of them, e.g. charset)
+via ``attr=value`` syntax within field names (values may be inside quotes):
+
+.. code:: rst
+
+   This metadata:
+
+   .. meta::
+      :description lang="cs": reStructuredText je značkovacý jazyk používaný v dokumentaci.
+      :http-equiv=Content-Type: text/html; charset=ISO-8859-1
+
+   would be rendered as:
+
+   .. code:: rst
+
+      <meta name="description" lang="cs" xml:lang="cs" content="reStructuredText je značkovacý jazyk používaný v dokumentaci.">
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
 Role Directives
 ---------------
@@ -1044,7 +1085,7 @@ perfect candidates for creating custom roles with additional configuration:
    Inline code examples are highligted via Pygments_ syntax highlighter, unless
    |RST| documents are parsed in different parsers (not using Docutils at all).
 
-   List of supported languages (lexers) is in the `Pygments documentation`_.
+   List of supported languages (lexers) is in `Pygments documentation`_.
 
 .. _Pygments: http://pygments.org/
 .. _Pygments documentation: http://pygments.org/docs/lexers/
