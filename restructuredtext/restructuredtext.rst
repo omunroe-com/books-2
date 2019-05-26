@@ -1031,6 +1031,18 @@ Unicode numbers can be followed by a comment, which will not be rendered:
 Date Directive
 ^^^^^^^^^^^^^^
 
+Format datetime using Python `time.strftime`_ function (default format is
+``%Y-%m-%d``, which is ISO 8601 date):
+
+.. code:: rst
+
+   .. |date| date::
+   .. |time| date:: %H:%M:%S
+
+   This document was generated on |date| at |time|.
+
+.. _time.strftime: https://docs.python.org/3/library/time.html#time.strftime
+
 Document Directives
 -------------------
 
