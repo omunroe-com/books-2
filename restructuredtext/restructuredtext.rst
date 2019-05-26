@@ -1020,6 +1020,50 @@ via ``attr=value`` syntax within field names (values may be inside quotes):
       <meta name="description" lang="cs" xml:lang="cs" content="reStructuredText je značkovacý jazyk používaný v dokumentaci.">
       <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
+Class Directive
+^^^^^^^^^^^^^^^
+
+Add HTML class attributes to the following non-comment element right after this
+class directive:
+
+.. code:: rst
+
+   .. class:: super heading
+
+   Section Title With Classes
+   ==========================
+
+   .. class:: special
+
+   This is a paragraph with "special" class.
+
+If |RST| elements are nested in the class directive, then classes are applied to
+all nested elements:
+
+.. code:: rst
+
+   .. class:: wow
+
+      This paragraph has the "wow" class.
+
+      This paragraph has also the "wow" class.
+
+   Unfortunately, this paragraph has not the "wow" class.
+
+.. note::
+
+   If the class directive is intended to be used before block quotes, then
+   immediately after the class directive must follow a comment, otherwise the
+   block quote will not have the class attributes (will be misinterpreted as
+   paragrahs inside the directive):
+
+   .. code:: rst
+
+      .. class:: not-paragraph
+      ..
+
+         This is a block quote.
+
 Role Directives
 ---------------
 
