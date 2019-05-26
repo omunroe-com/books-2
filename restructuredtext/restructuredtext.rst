@@ -27,6 +27,7 @@
 
    :Filename extension: ``.rst``
    :Reference documentation: http://docutils.sourceforge.net/rst.html#reference-documentation
+   :Online editor: http://rst.ninjs.org (unmaintained)
 
 .. contents::
 
