@@ -972,6 +972,8 @@ Table Directives
 Substitution Directives
 -----------------------
 
+Directives intended for substitutions and nothing else.
+
 Replace Directive
 ^^^^^^^^^^^^^^^^^
 
@@ -1043,11 +1045,18 @@ Format datetime using Python `time.strftime`_ function (default format is
 
 .. _time.strftime: https://docs.python.org/3/library/time.html#time.strftime
 
+Body Element Directives
+-----------------------
+
+Directives to extend existing body elements.
+
 Document Directives
 -------------------
 
 HTML Directives
 ---------------
+
+Directives specially for HTML output.
 
 Title Directive
 ^^^^^^^^^^^^^^^
