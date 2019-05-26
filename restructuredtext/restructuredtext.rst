@@ -963,6 +963,24 @@ Document Directives
 HTML Directives
 ---------------
 
+Title Directive
+^^^^^^^^^^^^^^^
+
+Set a document meta title, which will be visible in the browser tab, if a
+document title is not enough:
+
+.. code:: rst
+
+   **************
+   Document Title
+   **************
+
+   .. title:: Different Document Title
+
+   The document meta title above will be rendered in HTML head as::
+
+      <title>Different Document Title</title>
+
 Meta Directive
 ^^^^^^^^^^^^^^
 
@@ -997,9 +1015,7 @@ via ``attr=value`` syntax within field names (values may be inside quotes):
       :description lang="cs": reStructuredText je značkovacý jazyk používaný v dokumentaci.
       :http-equiv=Content-Type: text/html; charset=ISO-8859-1
 
-   would be rendered as:
-
-   .. code:: rst
+   would be rendered as::
 
       <meta name="description" lang="cs" xml:lang="cs" content="reStructuredText je značkovacý jazyk používaný v dokumentaci.">
       <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
