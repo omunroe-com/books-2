@@ -958,6 +958,31 @@ Image Directives
 Table Directives
 ----------------
 
+Substitution Directives
+-----------------------
+
+Replace Directive
+^^^^^^^^^^^^^^^^^
+
+Replace text in substitutions:
+
+.. code:: rst
+
+   .. |RST| replace:: reStructuredText
+
+   |RST| is really long to type.
+
+.. note::
+
+   Substitutions may be defined wherever in a document (before or after
+   replacement text).
+
+Unicode Directive
+^^^^^^^^^^^^^^^^^
+
+Date Directive
+^^^^^^^^^^^^^^
+
 Document Directives
 -------------------
 
