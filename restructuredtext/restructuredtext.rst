@@ -910,19 +910,23 @@ Directives are the primary extension mechanism of |RST| (the secondary are
 `Interpreted Text Roles`_), how to extend or modify documents. Syntax is similar
 to `Hyperlinks`_, `Footnotes`_ or `Substitutions`_.
 
-They consists of two periods followed by a space, name of directive, two colons
-and content for the directive:
+They consists of two periods followed by a space, name of directive, two colons,
+optionally arguments for that directive and optionally block of content for the
+directive:
 
 .. code:: rst
 
-   .. directive-name:: content
+   .. directive-name:: argument
 
    or
 
    .. directive-name::
 
       Long content over
-      two lines.
+      multiple lines with a blank line
+      before this block.
+
+      Python documentation uses that way.
 
 Each directive may have options (configuration for that directive) via a field
 list inside the directive. There are two common options, ``class`` and
@@ -930,13 +934,7 @@ list inside the directive. There are two common options, ``class`` and
 
 .. code:: rst
 
-   .. directive-name:: content
-      :class: a b-b c-c-c
-      :name: Human name for this directive
-
-   or
-
-   .. directive-name::
+   .. directive-name:: argument
       :class: a b c
       :name: Human name for this directive
 
@@ -972,7 +970,7 @@ Table Directives
 Substitution Directives
 -----------------------
 
-Directives intended for substitutions and nothing else.
+Directives suited for substitutions and nothing else.
 
 Replace Directive
 ^^^^^^^^^^^^^^^^^
