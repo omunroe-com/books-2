@@ -1068,6 +1068,50 @@ has the following admonitions:
 Some of these admonitions are almost overlaping (attention, caution, danger), so
 the last four admonitions are usually used (important, note, tip, warning).
 
+Important Directive
+^^^^^^^^^^^^^^^^^^^
+
+Create an important admonition:
+
+.. code:: rst
+
+   .. important::
+
+      This is really important.
+
+Note Directive
+^^^^^^^^^^^^^^
+
+Create a note admonition:
+
+.. code:: rst
+
+   .. note::
+
+      This is a note.
+
+Tip Directive
+^^^^^^^^^^^^^
+
+Create a tip admonition:
+
+.. code:: rst
+
+   .. tip::
+
+      This tip saves your life.
+
+Warning Directive
+^^^^^^^^^^^^^^^^^
+
+Create a warning admonition:
+
+.. code:: rst
+
+   .. warning::
+
+      Take this warning seriously.
+
 Document Directives
 -------------------
 
