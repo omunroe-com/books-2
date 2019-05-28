@@ -1048,6 +1048,26 @@ Body Element Directives
 
 Directives to extend existing body elements.
 
+Admonition Directives
+---------------------
+
+Directives for semantic text (additional topic information for readers). |RST|
+has the following admonitions:
+
+* ``admonition`` (generic)
+* ``attention``
+* ``caution``
+* ``danger``
+* ``error``
+* ``hint``
+* ``important``
+* ``note``
+* ``tip``
+* ``warning``
+
+Some of these admonitions are almost overlaping (attention, caution, danger), so
+the last four admonitions are usually used (important, note, tip, warning).
+
 Document Directives
 -------------------
 
