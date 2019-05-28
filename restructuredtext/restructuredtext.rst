@@ -136,7 +136,21 @@ recommended by |RST|:
    Section Title
    =============
 
-   ...
+.. note::
+
+   When a document has a lot of text within sections and scrolling is needed in
+   that document, then it may easily get you lost unless you use a |RST| plugin
+   with quick table of contents.
+
+   Python documention has mention about generous using blank lines, but nothing
+   concrete, how many should be used. In generous, it makes sense to use more
+   than one blank line between sections with body elements.
+
+   The following numbers may be used:
+
+   * 3 blank lines between sections (H2)
+   * 2 blank lines between subsections (H3)
+   * 1 blank line between subsubsections (H4)
 
 .. tip::
 
