@@ -46,12 +46,15 @@
 .. _reStructuredText: http://docutils.sourceforge.net/rst.html
 .. _Sphinx: http://www.sphinx-doc.org
 
+
+
 Markup
 ======
 
 Markup is a set of special characters within text. Parsers thanks to them know,
 how to transform the given text in a document to other text or file formats, for
 example HTML or PDF.
+
 
 Sections
 --------
@@ -160,6 +163,7 @@ recommended by |RST|:
 
 .. _The Python documentation: https://devguide.python.org/documenting/#sections
 
+
 Paragraphs
 ----------
 
@@ -204,6 +208,7 @@ containing a line break:
    Python documentation uses maximally 80 characters per line except a few
    special cases (tables, hyperlinks, code samples), when it is allowed to
    exceed this limit.
+
 
 Text styles
 -----------
@@ -251,6 +256,7 @@ Each character inside double backquotes ("``") is preserved:
 
    Because both emphasis and strong emphasis use asterisks, it is not possible
    to use italics and boldface at the same time.
+
 
 Lists
 -----
@@ -461,6 +467,7 @@ is needed for the body elements on the next lines:
    alignment in option lists by highlighting an option list and applying a
    keyboard shortcut.
 
+
 Hyperlinks
 ----------
 
@@ -573,6 +580,7 @@ The anonymous hyperlink targets may be shortened:
 
       reST has a few shortcuts, see `List of shortcuts`_ (above).
 
+
 Tables
 ------
 
@@ -677,6 +685,7 @@ separator between table headers and other rows:
    |RST| provides directives for simplier work with tables, which will be
    covered later in this book.
 
+
 Code Samples
 ------------
 
@@ -730,6 +739,7 @@ interactive interpreter (no need to indent code):
    Python interactive examples. There are special directives for this case
    (either in |RST| or Sphinx).
 
+
 Block Quotes
 ------------
 
@@ -775,6 +785,7 @@ author of that quotes, if before name are two hyphens:
 
       -- X Y
 
+
 Comments
 --------
 
@@ -787,6 +798,7 @@ and other lines are left-aligned to this indentation:
       over two lines.
 
       This is another paragraph inside this single comment.
+
 
 Footnotes
 ---------
@@ -836,6 +848,7 @@ are left-aligned with the left square bracket:
    only to find a previous or next occurence of ``[#]_`` to know where to
    properly place the new footnote.
 
+
 Horizontal Lines
 ----------------
 
@@ -872,6 +885,7 @@ examples.
       .. [#] Footnote A
       .. [#] Footnote B
       .. [#] Footnote C
+
 
 Substitution
 ------------
@@ -916,6 +930,8 @@ Other possible inline directives and directives in general are covered in the
 
       .. |RST| replace:: reStructuredText
       .. _RST: http://docutils.sourceforge.net/rst.html
+
+
 
 Directives
 ==========
@@ -975,11 +991,14 @@ name option may be referenced (hyperlinked):
    When using the ``name`` option inside directives, the name (text) must be
    unique across a document, otherwise a |RST| parser may raise an error.
 
+
 Image Directives
 ----------------
 
+
 Table Directives
 ----------------
+
 
 Substitution Directives
 -----------------------
@@ -1057,10 +1076,12 @@ Format datetime using Python `time.strftime`_ function (default format is
 
 .. _time.strftime: https://docs.python.org/3/library/time.html#time.strftime
 
+
 Body Element Directives
 -----------------------
 
 Directives to extend existing body elements.
+
 
 Admonition Directives
 ---------------------
@@ -1126,8 +1147,10 @@ Create a warning admonition:
 
       Take this warning seriously.
 
+
 Document Directives
 -------------------
+
 
 HTML Directives
 ---------------
@@ -1235,6 +1258,7 @@ all nested elements:
 
          This is a block quote.
 
+
 Role Directives
 ---------------
 
@@ -1321,6 +1345,8 @@ perfect candidates for creating custom roles with additional configuration:
 .. _Pygments: http://pygments.org/
 .. _Pygments documentation: http://pygments.org/docs/lexers/
 
+
+
 Interpreted Text Roles
 ======================
 
@@ -1347,6 +1373,7 @@ be use as a title of a book or any other text materials:
    The default role may be changed via `default-role`_ directive, however it is
    better to use always explicit roles.
 
+
 Superscript Role
 ----------------
 
@@ -1357,6 +1384,7 @@ Create superscript (alias `:sup:`):
    `E = mc^2` may be written as:
 
    E = mc\ :superscript:`2` or E = mc\ :sup:`2`
+
 
 Subscript Role
 --------------
@@ -1380,6 +1408,7 @@ Create subscript (alias `:sub:`):
 
       .. |H20| replace:: H\ :sub:`2`\ O
 
+
 Math Role
 ---------
 
@@ -1392,6 +1421,7 @@ formulas in `$ ... $`:
 
 .. _LaTeX:: https://en.wikibooks.org/wiki/LaTeX/Mathematics
 
+
 PEP Role
 --------
 
@@ -1403,6 +1433,7 @@ Create a link to a specific `PEP`_ (Python Enhancement Proposal):
 
 .. _PEP: https://www.python.org/dev/peps/
 
+
 RFC Role
 --------
 
@@ -1413,6 +1444,8 @@ Create a link to a specific `RFC`_ (Request For Comments):
    See :RFC:`3339` for standard date and time formats.
 
 .. _RFC: https://tools.ietf.org/rfc/index
+
+
 
 Glossary
 ========
@@ -1433,6 +1466,8 @@ Literal Blocks
    `Code Samples`_
 Transitions
    `Horizontal Lines`_
+
+
 
 References
 ==========
