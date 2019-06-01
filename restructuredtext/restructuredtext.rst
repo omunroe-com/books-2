@@ -887,8 +887,8 @@ examples.
       .. [#] Footnote C
 
 
-Substitution
-------------
+Substitutions
+-------------
 
 Substitions are words inside vertical bars ("|"), which will be during rendering
 substituted with other words according to the given inline directive, which was
@@ -1370,7 +1370,7 @@ be use as a title of a book or any other text materials:
 
 .. note::
 
-   The default role may be changed via `default-role`_ directive, however it is
+   The default role may be changed via `Default-role Directive`_, however it is
    better to use always explicit roles.
 
 
@@ -1419,7 +1419,7 @@ formulas in `$ ... $`:
 
    This is a simple formula: `f(x) = x^2`.
 
-.. _LaTeX:: https://en.wikibooks.org/wiki/LaTeX/Mathematics
+.. _LaTeX: https://en.wikibooks.org/wiki/LaTeX/Mathematics
 
 
 PEP Role
@@ -1461,7 +1461,7 @@ Doctest Blocks
    `Code Samples`_ with interactive Python interpreter.
 Inline Markup
    `Text Styles`_ plus markup inside paragraphs, like `Hyperlinks`_,
-   `Footnotes`_ and `Substituion`_ without parts inside ``..`` constructs.
+   `Footnotes`_ and `Substitutions`_ without parts inside ``..`` constructs.
 Literal Blocks
    `Code Samples`_
 Transitions
@@ -1480,7 +1480,7 @@ References
 * `Sphinx - Getting Started`__
 * `Sphinx - reStructuredText Primer`__
 * `Wikipedia - reStructuredText`__
-* `Wikipedia - Sphinx (documentation generator)`
+* `Wikipedia - Sphinx (documentation generator)`__
 
 __ https://devguide.python.org/documenting/
 __ reStructuredText_
