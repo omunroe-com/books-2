@@ -1163,12 +1163,15 @@ or a subtitle) using a default title ``Contents`` for the TOC:
 
    .. contents::
 
-Alternatively, a different title may be set for the TOC or also limit section
-levels to be visible in the TOC:
+Alternatively, a different title may be set for the TOC:
 
 .. code:: rst
 
    .. contents:: Table of Contents
+
+To restrict section levels listed in the TOC, a ``depth`` option must be used:
+
+   .. contents::
       :depth: 2
 
    The table of contents above will show only sections and subsections.
@@ -1178,6 +1181,51 @@ levels to be visible in the TOC:
    If a document has a table of contents and it is rendered for example to a
    HTML format, then entries in the TOC and section headers in the document are
    hyperlinked to each other.
+
+Sectnum Directive
+^^^^^^^^^^^^^^^^^
+
+Automatically number sections headers in a document:
+
+.. code:: rst
+
+   .. sectnum::
+
+   Sections headers will look like:
+
+   * 1 Section Title
+   * 1.1 Subsection Title
+   * 1.1.1 Subsubsection Title
+   * 2 Section Title
+
+Add a prefix to each numbered section headers:
+
+.. code:: rst
+
+   .. sectnum::
+      :suffix: .
+
+   Sections headers will look like:
+
+   * 1. Section Title
+   * 1.1. Subsection Title
+   * 1.1.1. Subsubsection Title
+   * 2. Section Title
+
+It is also possible to limit section headers, which will be numbered, using a
+``depth`` option, like in `Contents Directive`_:
+
+.. code:: rst
+
+   .. sectnum::
+      :depth: 2
+
+   Sections headers will look like:
+
+   * 1. Section Title
+   * 1.1. Subsection Title
+   *        Subsubsection Title
+   * 2. Section Title
 
 
 HTML Directives
