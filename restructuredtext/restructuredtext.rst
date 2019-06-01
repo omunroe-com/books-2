@@ -1151,6 +1151,34 @@ Create a warning admonition:
 Document Directives
 -------------------
 
+Directives about documents, either a document itself or other documents.
+
+Contents Directive
+^^^^^^^^^^^^^^^^^^
+
+Generate a table of contents (TOC) from all sections except for a document title
+or a subtitle) using a default title ``Contents`` for the TOC:
+
+.. code:: rst
+
+   .. contents::
+
+Alternatively, a different title may be set for the TOC or also limit section
+levels to be visible in the TOC:
+
+.. code:: rst
+
+   .. contents:: Table of Contents
+      :depth: 2
+
+   The table of contents above will show only sections and subsections.
+
+.. tip::
+
+   If a document has a table of contents and it is rendered for example to a
+   HTML format, then entries in the TOC and section headers in the document are
+   hyperlinked to each other.
+
 
 HTML Directives
 ---------------
