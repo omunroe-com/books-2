@@ -1,9 +1,9 @@
 ==================
  reStructuredText
 ==================
------------------------------
- Lightweight markup language
------------------------------
+---------------------------------------------------------
+ Lightweight Markup Language for Technical Documentation
+---------------------------------------------------------
 
 :Author: `Davie Badger`_
 :Contact: davie.badger@gmail.com
