@@ -1045,6 +1045,71 @@ Align a table and set proportionally size of columns via table options:
       Jacob      Badger    Male    19
       =========  ========  ======  ===
 
+List-table Directive
+^^^^^^^^^^^^^^^^^^^^
+
+Create a table via a list style without headers, column or row span (not
+allowed at all):
+
+.. code:: rst
+
+   Below is a table without a table title:
+
+   .. list-table::
+
+      * - Davie
+        - Badger
+        - Male
+        - 24
+      * - Jacob
+        - Badger
+        - Male
+        - 19
+
+List tables may have either headers in the first row using a ``header-rows``
+option or on the left in the first column, like in `Option Lists`_, using a
+``stub-columns`` option:
+
+.. code:: rst
+
+   .. list-table:: Table with headers in the first row
+      :header-rows: 1
+
+      * - Firstname
+        - Lastname
+        - Gender
+        - Age
+      * - Davie
+        - Badger
+        - Male
+        - 24
+
+   .. list-table:: Table with headers in the first column
+      :stub-columns: 1
+
+      * - Name
+        - reStructuredText
+      * - Shortcut
+        - rst
+      * - Parser
+        - Docutils
+
+.. tip::
+
+   If in a row is a list item without content, then it is considered as an empty
+   cell:
+
+   .. code:: rst
+
+      .. list-table:: Example with an empty cell
+
+         * - A
+           - B
+           - C
+         * - 1
+           -
+           - 3
+
 Substitution Directives
 -----------------------
 
