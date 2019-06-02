@@ -210,7 +210,7 @@ containing a line break:
    exceed this limit.
 
 
-Text styles
+Text Styles
 -----------
 
 Text in paragraphs and other body elements [#]_ is normal by default (no text
@@ -1226,6 +1226,43 @@ It is also possible to limit section headers, which will be numbered, using a
    * 1.1. Subsection Title
    *        Subsubsection Title
    * 2. Section Title
+
+Include Directive
+^^^^^^^^^^^^^^^^^
+
+Include relatively another |RST| documents into a current document:
+
+.. code:: rst
+
+   .. include:: file.rst
+
+   .. include:: directory/file.rst
+
+In general, other document types may be also included, however they should be
+rendered as code samples (either highlighted or not):
+
+.. code:: rst
+
+   Below will be included a code sample without syntax highlighting:
+
+   .. include:: test.py
+      :literal:
+
+   Below will be included a code sample with syntax highlighting:
+
+   .. include:: examples/test.py
+      :code: py
+
+.. note::
+
+   Be aware, where is the ``include`` directive used, either at the left edge or
+   inside body elements. If it is the first option (edge), then section headers
+   are allowed in included documents, otherwise not.
+
+.. warning::
+
+   |RST| parsers may ignore the ``include`` directive, if it is configured that
+   way or passed as an option to document convertors.
 
 
 HTML Directives
