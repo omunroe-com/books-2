@@ -1171,6 +1171,8 @@ Alternatively, a different title may be set for the TOC:
 
 To restrict section levels listed in the TOC, a ``depth`` option must be used:
 
+.. code:: rst
+
    .. contents::
       :depth: 2
 
@@ -1263,6 +1265,41 @@ rendered as code samples (either highlighted or not):
 
    |RST| parsers may ignore the ``include`` directive, if it is configured that
    way or passed as an option to document convertors.
+
+Raw Directive
+^^^^^^^^^^^^^
+
+Paste raw text, which will be used in another document type after rendering:
+
+.. code:: rst
+
+   .. raw:: html
+
+      <script>console.log('Hello World')</script>
+
+Like in `Include Directive`_, it is also possible to include raw documents from
+local disk or even from remote websites:
+
+.. code:: rst
+
+   .. raw:: html
+      :file: local.html
+
+   or
+
+   .. raw:: html
+      :url: www.example.com/file.html
+
+.. important::
+
+   Use wisely the ``raw`` directive, because |RST| will not parse its content
+   and the content will be placed as it is. It may represent a potential
+   security hole.
+
+.. warning::
+
+   |RST| parsers may ignore the ``raw`` directive, if it is configured that way
+   or passed as an option to document convertors.
 
 
 HTML Directives
