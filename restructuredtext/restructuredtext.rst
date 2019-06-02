@@ -999,6 +999,32 @@ Image Directives
 Table Directives
 ----------------
 
+Advanced directives for tables.
+
+Table Directive
+^^^^^^^^^^^^^^^
+
+Add a title to simple or grid tables:
+
+.. code:: rst
+
+   .. table:: Users
+
+      =========  ========  ======  ===
+      Firstname  Lastname  Gender  Age
+      =========  ========  ======  ===
+      Davie      Badger    Male    24
+      Jacob      Badger    Male    19
+      =========  ========  ======  ===
+
+Additionally, tables inside the ``table`` directive may be further configured
+with these options:
+
+* ``align`` - align a table ``left`` (default), ``center`` or ``right`` in a
+              document:
+* ``widths`` - ``auto`` according to text in columns, ``grid`` for more flexible
+               columns or comma-separated fixed numbers (ratio) for columns
+               starting from the left (columns from the right may be omitted)
 
 Substitution Directives
 -----------------------
@@ -1464,7 +1490,7 @@ perfect candidates for creating custom roles with additional configuration:
 
 * ``code``
 
-  * enable inline code highliting:
+  * enable inline code highlighting:
 
     .. code:: rst
 
