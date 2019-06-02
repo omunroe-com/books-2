@@ -1026,6 +1026,10 @@ with these options:
                columns or comma-separated fixed numbers (ratio) for columns
                starting from the left (columns from the right may be omitted)
 
+.. note::
+
+   The table title is optional argument for the ``table`` directive.
+
 Substitution Directives
 -----------------------
 
