@@ -999,12 +999,22 @@ Image Directives
 Table Directives
 ----------------
 
-Advanced directives for tables.
+Advanced directives for tables. Each of these directives supports these options:
+
+* ``align``
+
+  * align a table ``left`` (default), ``center`` or ``right`` in a document
+
+* ``widths``
+
+  * ``auto`` according to text in columns, ``grid`` for more flexible columns or
+    comma-separated fixed numbers (ratio) for columns starting from the left
+    (columns from the right may be omitted), e.g. ``15, 10, 30``
 
 Table Directive
 ^^^^^^^^^^^^^^^
 
-Add a title to simple or grid tables:
+Add a title (optional) to simple or grid tables:
 
 .. code:: rst
 
@@ -1017,18 +1027,23 @@ Add a title to simple or grid tables:
       Jacob      Badger    Male    19
       =========  ========  ======  ===
 
-Additionally, tables inside the ``table`` directive may be further configured
-with these options:
+Align a table and set proportionally size of columns via table options:
 
-* ``align`` - align a table ``left`` (default), ``center`` or ``right`` in a
-              document:
-* ``widths`` - ``auto`` according to text in columns, ``grid`` for more flexible
-               columns or comma-separated fixed numbers (ratio) for columns
-               starting from the left (columns from the right may be omitted)
+.. code:: rst
 
-.. note::
+   Below is a table with proportionally set size for each column except for
+   the last one:
 
-   The table title is optional argument for the ``table`` directive.
+   .. table::
+      :align: center
+      :widths: 10, 10, 5
+
+      =========  ========  ======  ===
+      Firstname  Lastname  Gender  Age
+      =========  ========  ======  ===
+      Davie      Badger    Male    24
+      Jacob      Badger    Male    19
+      =========  ========  ======  ===
 
 Substitution Directives
 -----------------------
