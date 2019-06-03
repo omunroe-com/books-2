@@ -1110,6 +1110,63 @@ option or on the left in the first column, like in `Option Lists`_, using a
            -
            - 3
 
+Csv-table Directive
+^^^^^^^^^^^^^^^^^^^
+
+Create a table using CSV format:
+
+.. code:: rst
+
+   .. csv-table:: CSV table without headers
+
+      "David", "Badger", "Male", 24
+      "Jacob", "Badger", "Male", 19
+
+   .. csv-table:: CSV table with headers
+      :header: "Firstname", "Lastname", "Gender", "Age"
+
+      "David", "Badger", "Male", 24
+      "Jacob", "Badger", "Male", 19
+
+CSV tables may be loaded relatively from local files or externally from an URL
+address, in which case there may be headers in rows, columns or not at all:
+
+.. code:: rst
+
+   .. csv-table:: CSV table without headers
+      :file: data.csv
+
+   .. csv-table:: CSV table with headers in the first row
+      :file: data.csv
+      :header-rows: 1
+
+   .. csv-table:: Remote CSV table with headers in the first column
+      :url: www.example.com/data.csv
+      :stub-columns: 1
+
+Usually CSV tables are comma-separated values with double quoted values, which
+contain commas. Howoever, if a CSV table uses different delim character or
+quotes, then the ``csv-table`` directive must know about it via set options:
+
+* ``delim``
+
+  * any character, e.g. ``;``, but default is ``,``, other allowed values are
+    ``space`` or ``tab``
+
+* ``quote``
+
+  * quote for string values, default ``"``
+
+* ``escape``
+
+  * escape character for quotes, default ``""``
+
+.. note::
+
+   Options such as ``delim``, ``quote`` and ``escape`` may contain Unicode
+   codes, for example ``0x09`` for tabs.
+
+
 Substitution Directives
 -----------------------
 
