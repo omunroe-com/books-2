@@ -1249,6 +1249,36 @@ Body Element Directives
 
 Directives to extend existing body elements.
 
+Code Directive
+^^^^^^^^^^^^^^
+
+Add a code sample with syntax highlightning:
+
+.. code:: rst
+
+   .. code:: py
+
+      print("Hello World")
+
+Optionally, line numbers may be turned on:
+
+.. code:: rst
+
+   .. code:: py
+      :number-lines:
+
+      print("Hello World")
+
+.. note::
+
+   Code examples are highligted via Pygments_ syntax highlighter, unless |RST|
+   documents are parsed in different parsers (not using Docutils at all).
+
+   List of supported languages (lexers) is in `Pygments documentation`_.
+
+.. _Pygments: http://pygments.org/
+.. _Pygments documentation: http://pygments.org/docs/lexers/
+
 Topic Directive
 ^^^^^^^^^^^^^^^
 
