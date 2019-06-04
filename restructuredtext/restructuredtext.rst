@@ -1249,6 +1249,23 @@ Body Element Directives
 
 Directives to extend existing body elements.
 
+Topic Directive
+^^^^^^^^^^^^^^^
+
+Add a topic container with a title to express a self-contained idea separated
+from the flow of a document without a need to create another sections:
+
+.. code:: rst
+
+   Section Title
+   =============
+
+   Bla bla bla
+
+   .. topic:: Idea
+
+      Foo bar baz
+
 
 Admonition Directives
 ---------------------
