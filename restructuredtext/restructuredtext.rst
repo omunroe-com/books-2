@@ -995,6 +995,48 @@ name option may be referenced (hyperlinked):
 Image Directives
 ----------------
 
+Image Directive
+^^^^^^^^^^^^^^^
+
+Add an image:
+
+.. code:: rst
+
+   Local image:
+
+   .. image:: path/to/image.png
+
+   Remote image:
+
+   .. image:: www.example.com/image.png
+
+The image directive supports these options:
+
+* ``alt``
+
+  * alternate text, when the image cannot be rendered or for impaired users
+
+* ``height``
+
+  * height of the image, e.g. 100 (default is original height)
+
+* ``width``
+
+  * width of the image, e.g. 100 (default is original width)
+
+* ``scale``
+
+  * scale the image in % (bigger, smaller) with respect to ``height`` or
+    ``width`` values, e.g. ``50 %`` (default is 100 %)
+
+* ``align``
+
+  * align the image left, center or right (default is left)
+
+* ``target``
+
+  * make the image clickable, either to an internal hyperlink target using
+    ``Link_`` syntax or to an external link
 
 Table Directives
 ----------------
