@@ -1290,6 +1290,17 @@ Add a mathematical formula using LaTeX math syntax including AMS extensions:
 
       f(x) = x^2
 
+Rubric Directive
+^^^^^^^^^^^^^^^^
+
+Add an informal heading, which is not part of the table of contents:
+
+.. code::
+
+   .. rubric:: Footnotes
+
+   .. [#] text
+
 Topic Directive
 ^^^^^^^^^^^^^^^
 
@@ -1306,6 +1317,21 @@ from the flow of a document without a need to create another sections:
    .. topic:: Idea
 
       Foo bar baz
+
+Highlights Directive
+^^^^^^^^^^^^^^^^^^^^
+
+Add a summary at the end of a section:
+
+.. code:: rst
+
+   .. highlights::
+
+      A summary of the story:
+
+      * a
+      * b
+      * c
 
 
 Admonition Directives
