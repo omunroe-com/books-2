@@ -1031,12 +1031,51 @@ The image directive supports these options:
 
 * ``align``
 
-  * align the image left, center or right (default is left)
+  * align the image left or right (both set float and change text flow around)
+    or center (default is no alignment)
 
 * ``target``
 
   * make the image clickable, either to an internal hyperlink target using
     ``Link_`` syntax or to an external link
+
+Figure Directive
+^^^^^^^^^^^^^^^^
+
+Add an image with caption (optional):
+
+.. code:: rst
+
+   .. figure:: path/to/image.png
+      :alt: alternate text
+
+      Caption for the image.
+
+Figures may also have a legend defined after a caption using common body
+elements:
+
+.. code:: rst
+
+   .. figure:: path/to/image.png
+      :alt: alternate text
+
+      Caption for the image.
+
+      Legend for the image with a grid table.
+
+The figure directive supports same options like for `Image Directive`_, except
+for the ``align`` option (now aligns the figure, not only image), plus these
+options:
+
+* ``figwidth``
+
+  * width of the image and caption in overall
+
+* ``figclass``
+
+   * set class attributes on the figure (by default the ``:class:`` option adds
+     classes only to the image)
+
 
 Table Directives
 ----------------
