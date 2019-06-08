@@ -1279,6 +1279,17 @@ Optionally, line numbers may be turned on:
 .. _Pygments: http://pygments.org/
 .. _Pygments documentation: http://pygments.org/docs/lexers/
 
+Math Directive
+^^^^^^^^^^^^^^
+
+Add a mathematical formula using LaTeX math syntax including AMS extensions:
+
+.. code:: rst
+
+   .. math::
+
+      f(x) = x^2
+
 Topic Directive
 ^^^^^^^^^^^^^^^
 
