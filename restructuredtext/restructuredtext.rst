@@ -2003,9 +2003,9 @@ __ https://en.wikipedia.org/wiki/Sphinx_(documentation_generator)
    of contents.
 .. [#] Body elements are markup inside sections (paragraphs, lists, tables
    etc.).
-.. [x] PEPs_ are documents about enhancing the Python language (such as style
+.. [#] PEPs_ are documents about enhancing the Python language (such as style
    guides, syntax, evaluations, protocols, plans) reviewed by the Python's
-   `Steering Coucil`_.
+   `Steering Council`_.
 .. [#] RFCs_ are documents about Internet standards (such as specifications,
    formats or protocols) ratified by the IETF_ community.
 
