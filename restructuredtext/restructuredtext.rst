@@ -1907,11 +1907,20 @@ formulas in `$ ... $`:
 PEP Role
 ^^^^^^^^
 
-Create a link to a specific `PEP`_ (Python Enhancement Proposal):
+Create a link to a specific `PEP`_ (**P**\ ython **E**\ nhancement
+**P**\ roposal) [#]_:
 
 .. code:: rst
 
    See :PEP:`8` for Python style guide.
+
+The previous example could be also written as:
+
+.. code:: rst
+
+   See `PEP 8`_ for Python style guide.
+
+   .. _PEP: https://www.python.org/dev/peps/
 
 .. _PEP: https://www.python.org/dev/peps/
 
@@ -1994,10 +2003,15 @@ __ https://en.wikipedia.org/wiki/Sphinx_(documentation_generator)
    of contents.
 .. [#] Body elements are markup inside sections (paragraphs, lists, tables
    etc.).
+.. [x] PEPs_ are documents about enhancing the Python language (such as style
+   guides, syntax, evaluations, protocols, plans) reviewed by the Python's
+   `Steering Coucil`_.
 .. [#] RFCs_ are documents about Internet standards (such as specifications,
    formats or protocols) ratified by the IETF_ community.
 
 .. _IETF: https://www.ietf.org/about/who/
+.. _PEPs: https://www.python.org/dev/peps/
 .. _RFCs: https://tools.ietf.org/rfc/index
+.. _Steering Council: https://www.python.org/dev/peps/pep-0013/#current-steering-council
 
 .. |RST| replace:: reStructuredText
