@@ -1928,6 +1928,8 @@ Create a link to a specific `RFC`_ (**R**\ equest **F**\ or **C**\ comments)
 
 The previous example could be also written as:
 
+.. code:: rst
+
    See `RFC 3339`_ for standard date and time formats.
 
    .. _RFC: https://tools.ietf.org/rfc/index
