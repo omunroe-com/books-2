@@ -1856,8 +1856,11 @@ be use as a title of a book or any other text materials:
    better to use always explicit roles.
 
 
+Built-in Roles
+--------------
+
 Superscript Role
-----------------
+^^^^^^^^^^^^^^^^
 
 Create superscript (alias `:sup:`):
 
@@ -1867,9 +1870,8 @@ Create superscript (alias `:sup:`):
 
    E = mc\ :superscript:`2` or E = mc\ :sup:`2`
 
-
 Subscript Role
---------------
+^^^^^^^^^^^^^^
 
 Create subscript (alias `:sub:`):
 
@@ -1890,9 +1892,8 @@ Create subscript (alias `:sub:`):
 
       .. |H20| replace:: H\ :sub:`2`\ O
 
-
 Math Role
----------
+^^^^^^^^^
 
 Create inline mathematical notation using `LaTeX` math mode without enclosing
 formulas in `$ ... $`:
@@ -1903,9 +1904,8 @@ formulas in `$ ... $`:
 
 .. _LaTeX: https://en.wikibooks.org/wiki/LaTeX/Mathematics
 
-
 PEP Role
---------
+^^^^^^^^
 
 Create a link to a specific `PEP`_ (Python Enhancement Proposal):
 
@@ -1915,9 +1915,8 @@ Create a link to a specific `PEP`_ (Python Enhancement Proposal):
 
 .. _PEP: https://www.python.org/dev/peps/
 
-
 RFC Role
---------
+^^^^^^^^
 
 Create a link to a specific `RFC`_ (**R**\ equest **F**\ or **C**\ comments)
 [#]_:
@@ -1935,6 +1934,10 @@ The previous example could be also written as:
    .. _RFC: https://tools.ietf.org/rfc/index
 
 .. _RFC: https://tools.ietf.org/rfc/index
+
+
+Custom Roles
+------------
 
 
 
