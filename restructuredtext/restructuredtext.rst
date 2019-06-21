@@ -1919,11 +1919,18 @@ Create a link to a specific `PEP`_ (Python Enhancement Proposal):
 RFC Role
 --------
 
-Create a link to a specific `RFC`_ (Request For Comments):
+Create a link to a specific `RFC`_ (**R**\ equest **F**\ or **C**\ comments)
+[#]_:
 
 .. code:: rst
 
    See :RFC:`3339` for standard date and time formats.
+
+The previous example could be also written as:
+
+   See `RFC 3339`_ for standard date and time formats.
+
+   .. _RFC: https://tools.ietf.org/rfc/index
 
 .. _RFC: https://tools.ietf.org/rfc/index
 
@@ -1982,5 +1989,10 @@ __ https://en.wikipedia.org/wiki/Sphinx_(documentation_generator)
    of contents.
 .. [#] Body elements are markup inside sections (paragraphs, lists, tables
    etc.).
+.. [#] RFCs_ are documents about Internet standards (such as specifications,
+   formats or protocols) ratified by the IETF_ community.
+
+.. _IETF: https://www.ietf.org/about/who/
+.. _RFCs: https://tools.ietf.org/rfc/index
 
 .. |RST| replace:: reStructuredText
