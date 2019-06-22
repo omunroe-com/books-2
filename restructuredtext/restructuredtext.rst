@@ -1859,6 +1859,16 @@ be use as a title of a book or any other text materials:
 Built-in Roles
 --------------
 
+Literal Role
+^^^^^^^^^^^^
+
+Create an inline code sample which respects escaped characters with backslashes,
+notably backquotes, unlike literal markup where backslashes are preserved:
+
+.. code:: rst
+
+   The text inside enclosed double backquotes (:literal:`\`\`...\`\``) is treated as an inline code sample.
+
 Math Role
 ^^^^^^^^^
 
