@@ -1874,12 +1874,21 @@ formulas in `$ ... $`:
 Sub Role
 ^^^^^^^^
 
-Create a superscript, where the characters are displayed in a smaller size below
+Create a subscript, where the characters are displayed in a smaller size below
 a normal line of text:
 
 .. code:: rst
 
    H\ :sub:`2`\ O is one of the famous chemical formulas.
+
+.. tip::
+
+   Subscripts are ideal candidates for substitutions for improving text
+   readability. The previous example could be also written as:
+
+      |H2O| is one of the famous chemical formulas.
+
+      .. |H2O| replace:: H\ :sub:`2`\ O
 
 Sup Role
 ^^^^^^^^
@@ -1889,7 +1898,16 @@ a normal line of text:
 
 .. code:: rst
 
-   E=mc\ :sup:`2` is one of the famous phyhics formulas.
+   E=mc\ :sup:`2` is one of the famous physics formulas.
+
+.. tip::
+
+   Superscripts are also ideal candidates for substitutions. The previous
+   example could be also written as:
+
+      |E=mc2| is one of the phyhics phyhics formulas.
+
+      .. |E=mc2| replace:: E=mc\ :sup:`2`
 
 PEP Role
 ^^^^^^^^
@@ -1901,13 +1919,15 @@ Create a link to a specific `PEP`_ (**P**\ ython **E**\ nhancement
 
    See :PEP:`8` for Python style guide.
 
-The previous example could be also written as:
+.. note::
 
-.. code:: rst
+   The previous example could be also written as:
 
-   See `PEP 8`_ for Python style guide.
+   .. code:: rst
 
-   .. _PEP 8: https://www.python.org/dev/peps/
+      See `PEP 8`_ for Python style guide.
+
+      .. _PEP 8: https://www.python.org/dev/peps/
 
 .. _PEP: https://www.python.org/dev/peps/
 
@@ -1921,13 +1941,15 @@ Create a link to a specific `RFC`_ (**R**\ equest **F**\ or **C**\ comments)
 
    See :RFC:`3339` for standard date and time formats.
 
-The previous example could be also written as:
+.. note::
 
-.. code:: rst
+   The previous example could be also written as:
 
-   See `RFC 3339`_ for standard date and time formats.
+   .. code:: rst
 
-   .. _RFC 3339: https://tools.ietf.org/rfc/index
+      See `RFC 3339`_ for standard date and time formats.
+
+      .. _RFC 3339: https://tools.ietf.org/rfc/index
 
 .. _RFC: https://tools.ietf.org/rfc/index
 
