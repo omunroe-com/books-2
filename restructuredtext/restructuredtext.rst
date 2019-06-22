@@ -1862,12 +1862,12 @@ Built-in Roles
 Math Role
 ^^^^^^^^^
 
-Create inline mathematical notation using `LaTeX` math mode without enclosing
-formulas in `$ ... $`:
+Create an inline mathematical formula in LaTeX_ format without a need to enclose
+formulas either into ``\(...\)`` (LaTeX) or ``$...$`` (TeX):
 
 .. code:: rst
 
-   This is a simple formula: `f(x) = x^2`.
+   Create a graph of a function :math:`f(x) = x^2`.
 
 .. _LaTeX: https://en.wikibooks.org/wiki/LaTeX/Mathematics
 
