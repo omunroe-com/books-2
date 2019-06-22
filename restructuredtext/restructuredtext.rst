@@ -1920,7 +1920,7 @@ The previous example could be also written as:
 
    See `PEP 8`_ for Python style guide.
 
-   .. _PEP: https://www.python.org/dev/peps/
+   .. _PEP 8: https://www.python.org/dev/peps/
 
 .. _PEP: https://www.python.org/dev/peps/
 
@@ -1940,7 +1940,7 @@ The previous example could be also written as:
 
    See `RFC 3339`_ for standard date and time formats.
 
-   .. _RFC: https://tools.ietf.org/rfc/index
+   .. _RFC 3339: https://tools.ietf.org/rfc/index
 
 .. _RFC: https://tools.ietf.org/rfc/index
 
