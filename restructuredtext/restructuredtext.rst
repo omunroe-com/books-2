@@ -1859,39 +1859,6 @@ be use as a title of a book or any other text materials:
 Built-in Roles
 --------------
 
-Superscript Role
-^^^^^^^^^^^^^^^^
-
-Create superscript (alias `:sup:`):
-
-.. code:: rst
-
-   `E = mc^2` may be written as:
-
-   E = mc\ :superscript:`2` or E = mc\ :sup:`2`
-
-Subscript Role
-^^^^^^^^^^^^^^
-
-Create subscript (alias `:sub:`):
-
-.. code:: rst
-
-   H20 may be written as:
-
-   H\ :subscript:`2`\ O or H\ :sub:`2`\ O
-
-.. tip::
-
-   Superscript or subscript are ideal candidates for substituion for improving
-   readability of text:
-
-   .. code:: rst
-
-      |H20| is one of the famoust formulars.
-
-      .. |H20| replace:: H\ :sub:`2`\ O
-
 Math Role
 ^^^^^^^^^
 
@@ -1903,6 +1870,26 @@ formulas in `$ ... $`:
    This is a simple formula: `f(x) = x^2`.
 
 .. _LaTeX: https://en.wikibooks.org/wiki/LaTeX/Mathematics
+
+Sub Role
+^^^^^^^^
+
+Create a superscript, where the characters are displayed in a smaller size below
+a normal line of text:
+
+.. code:: rst
+
+   H\ :sub:`2`\ O is one of the famous chemical formulas.
+
+Sup Role
+^^^^^^^^
+
+Create a superscript, where the characters are displayed in a smaller size above
+a normal line of text:
+
+.. code:: rst
+
+   E=mc\ :sup:`2` is one of the famous phyhics formulas.
 
 PEP Role
 ^^^^^^^^
