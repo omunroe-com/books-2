@@ -1859,6 +1859,21 @@ be use as a title of a book or any other text materials:
 Built-in Roles
 --------------
 
+|RST| has notably these built-in roles:
+
+* ``literal``
+* ``math``
+* ``sub``
+* ``sup``
+* ``title``
+* ``PEP``
+* ``RFC``
+
+Other roles exist just for illustrative reasons, namely ``emphasis`` and
+``strong``, which are equivalents of italics and bold text styles. Finally,
+there are two special roles, ``code`` and ``raw``, which cannot be used
+individually, but only in conjunction with a ``role`` directive.
+
 Literal Role
 ^^^^^^^^^^^^
 
