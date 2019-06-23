@@ -1944,6 +1944,20 @@ material or even artwork:
 
   `title:`How to Title My Book` is the most selling book in the world.
 
+.. note::
+
+   The title role is the only role which may be used implicitly without
+   specifying a role like :literal:`\`How to Title My Book\``. It is due to a
+   ``default-role`` directive, which is by default set to the title role:
+
+   .. code:: rst
+
+      .. default-role:: title
+
+   If the ``default-role`` directive is set differently, then it is not safe to
+   use the title role implicitly. That is why it is always better to use roles
+   explicitly.
+
 PEP Role
 ^^^^^^^^
 
