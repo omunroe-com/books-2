@@ -1934,6 +1934,16 @@ a normal line of text:
 
       .. |E=mc2| replace:: E=mc\ :sup:`2`
 
+Title Role
+^^^^^^^^^^
+
+Create a title of a work, which may be a book, a chapter or any other text
+material or even artwork:
+
+.. code:: rst
+
+  `title:`How to Title My Book` is the most selling book in the world.
+
 PEP Role
 ^^^^^^^^
 
