@@ -1863,11 +1863,22 @@ Literal Role
 ^^^^^^^^^^^^
 
 Create an inline code sample which respects escaped characters with backslashes,
-notably backquotes, unlike literal markup where backslashes are preserved:
+notably backquotes, unlike inline literal markup where backslashes are
+preserved:
 
 .. code:: rst
 
    The text inside enclosed double backquotes (:literal:`\`\`...\`\``) is treated as an inline code sample.
+
+.. warning::
+
+   The previous example is not possible to create via inline literal markup like
+   :literal:`\`\`\`\`...\`\`\`\``, because the Docutils parser would have a
+   problem to find out where is the start and the end of the inline code sample.
+   The same goes for a single backquote like :literal:`\`\`\``.
+
+   In general, if an inline code sample requires using backquotes, then it is
+   safer to use the literal role to avoid an unwanted rendered result.
 
 Math Role
 ^^^^^^^^^
