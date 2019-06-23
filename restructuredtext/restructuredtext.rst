@@ -1896,6 +1896,8 @@ a normal line of text:
    Subscripts are ideal candidates for substitutions for improving text
    readability. The previous example could be also written as:
 
+   .. code:: rst
+
       |H2O| is one of the famous chemical formulas.
 
       .. |H2O| replace:: H\ :sub:`2`\ O
@@ -1914,6 +1916,8 @@ a normal line of text:
 
    Superscripts are also ideal candidates for substitutions. The previous
    example could be also written as:
+
+   .. code:: rst
 
       |E=mc2| is one of the phyhics phyhics formulas.
 
