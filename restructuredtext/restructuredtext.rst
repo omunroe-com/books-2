@@ -1837,6 +1837,17 @@ mechanism in |RST| how to extend inline markup. By roles is possible to style
 inline text, create quickly and easily a hyperlink pointing to a specific domain
 or transform the text in a different way.
 
+The syntax of roles consists of a role name without whitespaces surrounded by
+colons and immediately followed by role content surrounded by single backquotes:
+
+.. code:: rst
+
+   :role-name:`role-content`
+
+Depending on where are roles used in a sentence, they may require spaces around
+role markup, either hard-typed or escaped a backslash. It mainly goes for roles
+used inside a single word or wherever inside a sentence, not at the edge.
+
 
 Built-in Roles
 --------------
