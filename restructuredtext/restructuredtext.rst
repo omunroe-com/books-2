@@ -2035,8 +2035,20 @@ Create a link to a specific `RFC`_ (**R**\ equest **F**\ or **C**\ comments)
 Custom Roles
 ------------
 
-Custom Roles via Directives
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Custom roles may be created in two ways:
+
+#. via a ``role`` directive
+#. via programming
+
+The first setup is quick and pretty straightforward, but it is very limited in
+creating new roles. It may be used only with special roles (``code``, ``raw``).
+
+The second setup is hard, but it offers technically speaking unlimited options
+in comparison with the first setup. However, it requires knowledge about the
+Docutils library and programming skills in Python to program new roles.
+
+Custom Roles via a Role Directive
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Custom Roles via Programming
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
