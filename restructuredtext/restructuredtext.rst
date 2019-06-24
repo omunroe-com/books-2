@@ -1848,6 +1848,27 @@ Depending on where are roles used in a sentence, they may require spaces around
 role markup, either hard-typed or escaped a backslash. It mainly goes for roles
 used inside a single word or wherever inside a sentence, not at the edge.
 
+Examples of using roles in practice:
+
+#. a role used at the edge of a sentence (single space is needed only left or
+   right depending on whether it is the start or the end of the sentence):
+
+   .. code:: rst
+
+      It is too :strong:`hot`.
+
+#. a role inside a sentence (spaces must be naturally around the role):
+
+   .. code:: rst
+
+      Do :strong:`not` forget to make your bed!
+
+#. a role inside a word (spaces must be escaped):
+
+   .. code:: rst
+
+      Thisis\ :strong:`one`\ word, where the word "one" will be formatted as bold text.
+
 
 Built-in Roles
 --------------
