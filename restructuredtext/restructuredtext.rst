@@ -1832,28 +1832,10 @@ perfect candidates for creating custom roles with additional configuration:
 Interpreted Text Roles
 ======================
 
-Interpreted text roles are pieces of text surrounded by single backquotes ("`")
-and implicitly or explicitly prefixed with a role, which could mean a special
-text style or a shortcut instead of a hyperlink, and with spaces around (may be
-escaped):
-
-.. code:: rst
-
-   * this is special `interpreted text` without a role (implicit, using the default)
-   * thisis\ `one`\ word (thisisoneword with interpreted "one" word)
-
-The default role is `:title-reference:` (also `:title:`), which is intended to
-be use as a title of a book or any other text materials:
-
-.. code:: rst
-
-   * `Super Title` is a book from X (implicit)
-   * :title:`Another Super Title` is also a book from X (explicit)
-
-.. note::
-
-   The default role may be changed via `Default-role Directive`_, however it is
-   better to use always explicit roles.
+Interpreted text roles are the second standardized way of the extension
+mechanism in |RST| how to extend inline markup. By roles is possible to style
+inline text, create quickly and easily a hyperlink pointing to a specific domain
+or transform the text in a different way.
 
 
 Built-in Roles
