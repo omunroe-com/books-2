@@ -2035,6 +2035,12 @@ Create a link to a specific `RFC`_ (**R**\ equest **F**\ or **C**\ comments)
 Custom Roles
 ------------
 
+Custom Roles via Directives
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Custom Roles via Programming
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 
 Glossary
