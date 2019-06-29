@@ -1746,24 +1746,6 @@ Role Directives
 
 Directives for manipulating `Interpreted Text Roles`_.
 
-Default-role Directive
-^^^^^^^^^^^^^^^^^^^^^^
-
-Set the default role within a document:
-
-.. code:: rst
-
-   .. default-role:: math
-
-   Math is now the default role, so I may type formulas implicitly without
-   specifying a role, for example `f(x) = x^2` instead of :math:`f(x) = x^2`.
-
-.. tip::
-
-   It is always better to use explicit roles instead of an implicit default
-   role in a document. With explicit roles, I know exactty how the given role
-   will be interpreted.
-
 Role Directive
 ^^^^^^^^^^^^^^
 
