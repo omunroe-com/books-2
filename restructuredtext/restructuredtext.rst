@@ -1972,7 +1972,7 @@ Custom Roles via the Role Directive
 
 Examples of creating roles via the role directive:
 
-#. a dummy role only for styling purposes in CSS:
+#. a dummy role only for styling purposes:
 
    .. code:: rst
 
@@ -2004,14 +2004,19 @@ Examples of creating roles via the role directive:
 
       Have you ever tried to run :python:`import this` in your Python interpreter?
 
-#. an overloaded ``raw`` role for a specific output format:
+#. an overloaded ``raw`` role for a specific output format (|RST| recommends
+   using a ``raw-`` prefix):
 
    .. code:: rst
 
-      .. role:: html(raw)
+      .. role:: raw-html(raw)
          :format: html
 
-      I do :html:`<del>not</del>` like reStructuredText.
+      I do :raw-html:`<del>not</del>` like reStructuredText.
+
+.. important::
+
+   Use wisely the overloaded ``raw-*`` roles, just like the ``raw`` directive.
 
 Custom Roles via Programming
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
