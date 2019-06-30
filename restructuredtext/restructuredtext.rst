@@ -1797,9 +1797,10 @@ Built-in Roles
 * ``RFC``
 
 Other roles exist just for illustrative reasons, namely ``emphasis`` and
-``strong``, which are equivalents of italics and bold text styles. Finally,
-there are two special roles, ``code`` and ``raw``, which cannot be used
-individually, but only in conjunction with a ``role`` directive.
+``strong``, which are equivalents of italics and bold text styles.
+
+Finally, there are two special roles, a ``code`` role and a ``raw`` role, which
+cannot be used individually, but only in conjunction with a ``role`` directive.
 
 Literal Role
 ^^^^^^^^^^^^
@@ -1950,11 +1951,12 @@ Custom Roles
 
 Custom roles may be created in two ways:
 
-#. via a ``role`` directive
+#. via the ``role`` directive
 #. via programming
 
 The first setup is quick and pretty straightforward, but it is very limited in
-creating new roles. It may be used only with special roles (``code``, ``raw``).
+creating new roles. It may be used either for styling role content or in
+conjunction with the ``code`` role or the ``raw`` role.
 
 The second setup is relatively hard, but it offers technically speaking
 unlimited options in comparison with the first way. It requires knowledge about
@@ -1965,8 +1967,8 @@ the Docutils library and programming skills in Python to program new roles.
    Look at already existing roles, either in |RST| or in Sphinx, before creating
    new ones (do not reinvent the wheel).
 
-Custom Roles via a Role Directive
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Custom Roles via the Role Directive
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Custom Roles via Programming
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
