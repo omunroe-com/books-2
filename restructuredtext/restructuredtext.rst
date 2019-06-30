@@ -2018,6 +2018,29 @@ Examples of creating roles via the role directive:
 
    Use wisely the overloaded ``raw-*`` roles, just like the ``raw`` directive.
 
+.. tip::
+
+   In general, roles may be aliased like the ``sup`` role, which is a shortcut
+   of a ``superscript``, by the overloading mechanism:
+
+   .. code:: rst
+
+      .. role:: strikethrough
+      .. role:: strike(strikethrough)
+
+      I do :strike:`not` like reStructuredText.
+
+   If it is an alias to an already existing built-in role, then it is fine to
+   have only one style rule for the long name. However, when it is an alias to a
+   completely new role from the |RST| perspective, then each role name must be
+   covered in styles:
+
+   .. code:: css
+
+      .strikethrough, .strike {
+        text-decoration: line-through;
+      }
+
 Custom Roles via Programming
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
