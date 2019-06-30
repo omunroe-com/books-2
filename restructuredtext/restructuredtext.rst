@@ -1970,8 +1970,53 @@ the Docutils library and programming skills in Python to program new roles.
 Custom Roles via the Role Directive
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Examples of creating roles via the role directive:
+
+#. a dummy role only for styling purposes in CSS:
+
+   .. code:: rst
+
+      .. role:: strikethrough
+
+      I do :strikethrough:`not` like reStructuredText.
+
+      ----
+
+      HTML & CSS:
+
+      <p>
+        I do
+        <span class="strikethrough">not</span>
+        like reStructuredText.
+      </p>
+
+      .strikethrough {
+        text-decoration: line-through;
+      }
+
+#. an overloaded ``code`` role with a specific language for inline syntax
+   highlighting (language names are same as for the ``code`` directive):
+
+   .. code:: rst
+
+      .. role:: python(code)
+         :language: python
+
+      Have you ever tried to run :python:`import this` in your Python interpreter?
+
+#. an overloaded ``raw`` role for a specific output format:
+
+   .. code:: rst
+
+      .. role:: html(raw)
+         :format: html
+
+      I do :html:`<del>not</del>` like reStructuredText.
+
 Custom Roles via Programming
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+TODO
 
 
 
